@@ -1,0 +1,17 @@
+#!/bin/bash
+#pandoc --latex-engine=xelatex --template="/root/.md2pdf/template.tex" $*
+function pandoc_one_file(){
+    if [ -f "$1" ];
+    then 
+        export PDF_FILE_NAME=`echo $1|sed "s/\..*$/\.pdf/g"`
+        echo Pandoc Converting $1 To $PDF_FILE_NAME
+        pandoc --latex-engine=xelatex --template="/root/.md2pdf/template.tex" $1 -o $PDF_FILE_NAME
+    else
+        echo $1 not exist
+        return
+    fi
+}
+for FILE_NOW in $*;
+do
+    pandoc_one_file $FILE_NOW
+done

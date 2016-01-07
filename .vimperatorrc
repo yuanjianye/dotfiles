@@ -1,0 +1,29 @@
+"3.9 (created: 2015/02/15 15:49:05)
+
+set gui=none
+set gui=tabs
+set hintchars=asdfhjkl
+
+map s :buffer!<Space>
+map b <C-b>
+map B :back<Return>
+
+noremap j 6j
+noremap k 6k
+noremap H 6h
+noremap L 6L
+
+noremap J gt
+noremap K gT
+
+noremap h gT
+noremap l gt
+
+noremap aa  :js ZoteroPane.addItemFromPage();<Return>
+
+imap jj <ESC>
+" vim: set ft=vimperator:
+command zscrapy js ZoteroPane.addItemFromPage();
+command zopen emenu Zotero
+source! /root/.vimperatorrc.local
+
