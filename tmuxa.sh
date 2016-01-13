@@ -1,5 +1,8 @@
-tmux a
-if [ "$?" != "0" ];
+#!/bin/bash
+tmux list-sessions 
+if [ "$?" == "0" ];
 then
-    tmux
+    exec tmux a
+else
+    exec tmux
 fi
