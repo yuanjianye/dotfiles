@@ -25,5 +25,10 @@ imap jj <ESC>
 " vim: set ft=vimperator:
 command zscrapy js ZoteroPane.addItemFromPage();
 command zopen emenu Zotero
+"command zscrape js Zotero_Browser.scrapeThisPage(".")
+"command zscrape js ZoteroPane.addItemFromPage();
+"command zoteroScrape js ZoteroPane.addItemFromPage();
+"command zoteroOpen emenu 工具.Zotero
+"noremap aa :js ZoteroPane.addItemFromPage();<Return>
 source! /root/.vimperatorrc.local
 
