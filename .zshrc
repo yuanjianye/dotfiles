@@ -49,15 +49,18 @@ ZSH_THEME="yuan"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 #plugins=(svn-fast-info)
+plugins=(autojump adb)
 
 # User configuration
 
-export PATH="/usr/local/java/jdk1.6.0_35/bin:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/usr/local/java/jdk1.6.0_35/bin:/usr/local/java/jdk1.6.0_35/bin:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/java/jdk1.6.0_35/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin::/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/usr/local/java/jdk1.6.0_35/bin:/usr/local/java/jdk1.6.0_35/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin"
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/java/jdk1.7.0_65/bin:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
+export PATH="/usr/local/java/jdk1.6.0_35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+#source $HOME/.py3/bin/activate
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -83,16 +86,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias s='sdcv'
+set -o vi
+alias mtr='mtr --curses'
 alias cls='clear'
 alias ll='ls -l'
 alias la='ls -a'
 alias ps='ps -aux'
 alias vi='vim'
-#alias javac="javac -J-Dfile.encoding=utf8"
+alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias locate="locate --regex"
 alias ack="ack-grep --smart-case"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+    --cache=$HOME/.npm/.cache/cnpm \
+    --disturl=https://npm.taobao.org/dist \
+    --userconfig=$HOME/.cnpmrc"
+
+alias s='fanyi'
 alias -s html=vi   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
 alias -s rb=vi     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
 #alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
@@ -107,6 +117,7 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias -s pdf='firefox'
 alias -s log=vi
+
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
 export JAVA_HOME="/usr/local/java/jdk1.6.0_35"
