@@ -68,6 +68,9 @@ nmap <F9> <ESC><ESC>:set paste<CR>
 map! <F10> <ESC><ESC>:set nopaste<CR>
 nmap <F10> <ESC><ESC>:set nopaste<CR>
 
+" map for sdcv
+nmap <F11> :!clear && sdcv -n <cword><CR>
+
 " map for astyle
 "-------------------------------------------------------------------------------------
 map! <F12> <ESC><ESC>:%! astyle -A1 -SKNfwpDx -M80<CR>
@@ -122,6 +125,7 @@ nmap <C-c> :qa!<CR>
 map j gj
 map k gk
 nmap <leader>o :only<CR>
+nmap f <leader><leader>w
 inoremap jj <ESC>
 cmap jj <ESC> 
 
@@ -164,7 +168,7 @@ set hid                                         " allow to change buffer without
 "set backspace=2                                " make backspace work normal
 set backspace=eol,start,indent                  " Configure backspace so it acts as it should act
 "set whichwrap+=<,>,h,l                         " allow backspace and cursor keys to wrap
-"set mouse=n                                    " use mouse in all modes
+set mouse=a                                     " use mouse in all modes
 set shortmess=atI                               " shorten messages to avoid 'press a key' prompt
 set report=0                                    " tell us when anything is changed via :...
 set fillchars=vert:\ ,stl:\ ,stlnc:\
@@ -231,7 +235,7 @@ let g:winManagerWindowLayout='FileExplorer|TagList'
 
 " cscope config
 "-------------------------------------------------------------------------------------
-" set cscopequickfix=s-,c-,d-,i-,t-,e-
+"set cscopequickfix=s-,c-,d-,i-,t-,e-
 nmap csa :cs add cscope.out<CR><CR>
 nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -241,6 +245,16 @@ nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap csf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap csd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+nmap <leader>sa :cs add cscope.out<CR><CR>
+nmap <leader>ss :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>sg :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>sc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>st :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>se :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <leader>sf :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <leader>si :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <leader>sd :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 " minibufexplorer config
 "-------------------------------------------------------------------------------------
@@ -305,7 +319,7 @@ Bundle 'vimim'
 
 " indent & mark & comp
 "-------------------------------------------------------------------------------------
-Bundle 'neocomplcache'
+"Bundle 'neocomplcache'
 Bundle 'IndentAnything'
 Bundle 'mark'
 Bundle 'The-NERD-Commenter'
@@ -328,8 +342,11 @@ Bundle 'vimrepress'
 "Bundle 'gg/python.vim'
 "Bundle 'vim-ipython'
 Bundle 'davidhalter/jedi-vim'
-Bundle 'vimwiki'
 
+Bundle 'vimwiki'
+Bundle 'mattn/calendar-vim'
+Bundle 'ack.vim'
+Bundle 'amoffat/snake'
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'
