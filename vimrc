@@ -127,8 +127,7 @@ map k gk
 nmap <leader>o :only<CR>
 nmap f <leader><leader>w
 inoremap jj <ESC>
-cmap jj <ESC> 
-
+cnoremap jj <ESC>
 
 "=====================================================================================
 " vim attribute set
@@ -275,6 +274,15 @@ let g:miniBufExplModSelTarget = 1
 "let g:SuperTabRetainCompletionType=52
 "let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
+"=====================================================================================
+" vimdiff color
+"=====================================================================================
+" to adjust the color setting when use vimdiff:
+" the default setting by vim is: bg: background color, fg: frontground color
+highlight DiffAdd         ctermfg=Blue ctermbg=Black 
+highlight DiffChange      ctermfg=Grey ctermbg=Black 
+highlight DiffDelete      ctermfg=DarkCyan ctermbg=Black 
+highlight DiffText        ctermfg=Red ctermbg=Black 
 
 "=====================================================================================
 " dict

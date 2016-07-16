@@ -1,4 +1,4 @@
-#!/usr/bin/js
+#!/usr/bin/nodejs
 var child_process = require("child_process");
 child_process.exec("i3-msg -t get_tree",function(err,stdout,stderr){
         var dataobj = JSON.parse(stdout);
@@ -91,6 +91,17 @@ child_process.exec("i3-msg -t get_tree",function(err,stdout,stderr){
             }
         }
 
+        var switchInputLanguage = function(){
+            child_process.exec("ibus engine",function(err,stdout,stderr){
+                    if(stdout.trim() === "xkb:us::eng"){
+                        child_process.exec("ibus engine sunpinyin");
+                    }
+                    else{
+                        child_process.exec("ibus engine xkb:us::eng");
+                    }
+                });  
+        }
+
         if(process.argv[2] === "splith"||process.argv[2] === "tabbed"){
             layout(process.argv[2]);
         }
@@ -106,7 +117,12 @@ child_process.exec("i3-msg -t get_tree",function(err,stdout,stderr){
         }
         
         if(process.argv[2] === "focusnext"){
+//            child_process.exec("ibus engine xkb:us::eng");
             focusNext();
+        }
+
+        if(process.argv[2] === "switchinputlanguage"){
+            switchInputLanguage();
         }
 //        console.log(JSON.stringify(getFocusWorkSpace(dataobj),null,4));
     });
