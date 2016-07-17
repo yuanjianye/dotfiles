@@ -7,6 +7,7 @@ set hintchars=asdfhjkl
 map s :buffer!<Space>
 map b <C-b>
 map B :back<Return>
+map t :!imswitch 0<Return> :tabopen <Space>
 
 noremap j 6j
 noremap k 6k
