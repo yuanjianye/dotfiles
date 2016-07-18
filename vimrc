@@ -6,16 +6,26 @@ runtime! debian.vim
 "=====================================================================================
 " colors
 "=====================================================================================
-"blue.vim      delek.vim    evening.vim  murphy.vim     README.txt  slate.vim
-"darkblue.vim  desert.vim   koehler.vim  pablo.vim      ron.vim     torte.vim
-"default.vim   elflord.vim  morning.vim  peachpuff.vim  shine.vim   zellner.vim
 colorscheme desert
 set background=dark                             " use a dark background
 syntax on                                       " syntax highlighting
 
-"highlight Pmenu
+"=====================================================================================
+" Pmenu highlight
+"=====================================================================================
 highlight Pmenu ctermbg=black ctermfg=darkcyan
 highlight PmenuSel ctermbg=black ctermfg=yellow
+
+"=====================================================================================
+" Vimdiff highlight
+"=====================================================================================
+" to adjust the color setting when use vimdiff:
+highlight DiffAdd         ctermfg=Blue ctermbg=Black
+highlight DiffChange      ctermfg=Grey ctermbg=Black
+highlight DiffDelete      ctermfg=DarkCyan ctermbg=Black
+highlight DiffText        ctermfg=Red ctermbg=Black
+
+
 
 "=====================================================================================
 " encoding
@@ -85,20 +95,15 @@ map <C-l> <C-W>l
 
 " map for start windowmager
 "-------------------------------------------------------------------------------------
-nmap <leader>wm :b!1<CR>:only!<CR>:resize 200<CR>:e!~/.vim/file.tmp<CR>:WMToggle<CR>:b!1<CR><C-w>k<C-w>J:resize 1<CR><C-w>k<C-w>l<C-w>H:vertical resize 120<CR><C-l><C-k>w:resize 15<CR><C-w>h<C-w>k:b!1<CR>
+nmap <leader>w :b!1<CR>:only!<CR>:resize 200<CR>:e!~/.vim/file.tmp<CR>:WMToggle<CR>:b!1<CR><C-w>k<C-w>J:resize 1<CR><C-w>k<C-w>l<C-w>H:vertical resize 120<CR><C-l><C-k>w:resize 15<CR><C-w>h<C-w>k:b!1<CR>
 
 " map for buffer swap command
 "-------------------------------------------------------------------------------------
-nmap <silent><leader>bn :bn<CR>
-nmap <silent><leader>bp :bp<CR>
+nmap <silent><leader>n :bn<CR>
+nmap <silent><leader>p :bp<CR>
 
 " map for run current file
-nmap <silent><leader>g :w!<CR>:!chmod 755 ./%<CR>:!clear<CR>:!./%<CR>
-
-" map for paste mod switch
-"-------------------------------------------------------------------------------------
-"nmap <leader>pa :set paste<CR>
-"nmap <leader>nop :set nopaste<CR>
+nmap <silent><leader>go :w!<CR>:!chmod 755 ./%<CR>:!clear<CR>:!./%<CR>
 
 " map for external command
 "-------------------------------------------------------------------------------------
@@ -125,7 +130,6 @@ nmap <C-c> :qa!<CR>
 map j gj
 map k gk
 nmap <leader>o :only<CR>
-nmap f <leader><leader>w
 inoremap jj <ESC>
 cnoremap jj <ESC>
 
@@ -152,10 +156,10 @@ set magic                                       " for regular expressions turn m
 "set backup                                     " make backup file and leave it around
 set path=.,/usr/include/*,,                     " where gf, ^Wf, :find will search
 set tags=./tags,tags
-"set autochdir                                  " wrong dir
+"set autochdir                                   " wrong dir
 set makeef=error.err                            " the errorfile for :make and :grep
 
-" vim ui 
+" vim ui
 "-------------------------------------------------------------------------------------
 set linespace=0                                 " space it out a little more (easier to read)
 set wildmenu                                    " type :h and press <Tab> to look what happens
@@ -214,6 +218,9 @@ set foldlevel=100                               " don't autofold anything (but I
 set foldopen -=search                           " don't open folds when you search into them
 set foldopen -=undo                             " don't open folds when you undo stuff
 
+" vimdiff
+"-------------------------------------------------------------------------------------
+set diffopt=filler,context:3
 
 "=====================================================================================
 " plugin config
@@ -234,16 +241,6 @@ let g:winManagerWindowLayout='FileExplorer|TagList'
 
 " cscope config
 "-------------------------------------------------------------------------------------
-"set cscopequickfix=s-,c-,d-,i-,t-,e-
-nmap csa :cs add cscope.out<CR><CR>
-nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap csc :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap cst :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap csf :cs find f <C-R>=expand("<cfile>")<CR><CR>
-nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-nmap csd :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 nmap <leader>sa :cs add cscope.out<CR><CR>
 nmap <leader>ss :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -262,27 +259,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplModSelTarget = 1
 " let g:miniBufExplorerMoreThanOne=0
-
-" fencview config
-"-------------------------------------------------------------------------------------
-" let g:fencview_autodetect = 1                 " open autodetect
-" let g:fencview_checklines = 10                " set checklines
-
-" complete
-"-------------------------------------------------------------------------------------
-"set completeopt=longest,menu
-"let g:SuperTabRetainCompletionType=52
-"let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-
-"=====================================================================================
-" vimdiff color
-"=====================================================================================
-" to adjust the color setting when use vimdiff:
-" the default setting by vim is: bg: background color, fg: frontground color
-highlight DiffAdd         ctermfg=Blue ctermbg=Black 
-highlight DiffChange      ctermfg=Grey ctermbg=Black 
-highlight DiffDelete      ctermfg=DarkCyan ctermbg=Black 
-highlight DiffText        ctermfg=Red ctermbg=Black 
 
 
 "=====================================================================================
@@ -323,6 +299,7 @@ Bundle 'winmanager'
 Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'ack.vim'
 
 " InputMethod
 "-------------------------------------------------------------------------------------
@@ -336,19 +313,11 @@ Bundle 'vimim'
 "-------------------------------------------------------------------------------------
 "Bundle 'neocomplcache'
 Bundle 'IndentAnything'
-Bundle 'mark'
+"Bundle 'mark'
 Bundle 'The-NERD-Commenter'
 
-" HTML & CSS & JS
+" VimPress
 "-------------------------------------------------------------------------------------
-Bundle 'jsbeautify'
-Bundle 'html5.vim'
-Bundle 'Javascript-Indentation'
-Bundle 'xml.vim'
-Bundle 'JavaScript-syntax'
-Bundle 'asins/vim-dict'
-
-"vimrepress
 Bundle 'vimrepress'
 "Bundle 'ultrablog'
 
@@ -359,13 +328,23 @@ Bundle 'vimrepress'
 Bundle 'davidhalter/jedi-vim'
 
 Bundle 'vimwiki'
-Bundle 'mattn/calendar-vim'
-Bundle 'ack.vim'
-Bundle 'amoffat/snake'
+"Bundle 'mattn/calendar-vim'
+"Bundle 'amoffat/snake'
+
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'
 "Bundle 'tetris.vim'
+
+" HTML & CSS & JS
+"-------------------------------------------------------------------------------------
+"Bundle 'jsbeautify'
+"Bundle 'html5.vim'
+"Bundle 'Javascript-Indentation'
+"Bundle 'xml.vim'
+"Bundle 'JavaScript-syntax'
+"Bundle 'asins/vim-dict'
+
 
 "
 "" Syntax
@@ -373,7 +352,7 @@ Bundle 'amoffat/snake'
 "Bundle 'confluencewiki.vim'
 "Bundle 'html5.vim'
 "Bundle 'JavaScript-syntax'
-""Bundle 'mako.vim'
+"Bundle 'mako.vim'
 "Bundle 'moin.vim'
 "Bundle 'python.vim--Vasiliev'
 "Bundle 'xml.vim'
@@ -382,7 +361,6 @@ Bundle 'amoffat/snake'
 "
 "Bundle 'desert256.vim'
 "Bundle 'Impact'
-"Bundle 'matrix.vim'
 "Bundle 'vibrantink'
 "Bundle 'vividchalk.vim'
 "
@@ -397,29 +375,36 @@ Bundle 'amoffat/snake'
 "Bundle 'gg/python.vim'
 "
 "" Plugin
-"Bundle 'The-NERD-tree'
 "Bundle 'AutoClose--Alves'
 "Bundle 'auto_mkdir'
 "Bundle 'cecutil'
-"Bundle 'fcitx.vim'
-"Bundle 'FencView.vim'
-""Bundle 'FuzzyFinder'
-"Bundle 'jsbeautify'
+"Bundle 'FuzzyFinder'
 "Bundle 'L9'
 "Bundle 'Mark'
 "Bundle 'matrix.vim'
 "Bundle 'mru.vim'
-"Bundle 'The-NERD-Commenter'
-""Bundle 'project.vim'
+"Bundle 'project.vim'
 "Bundle 'restart.vim'
-"Bundle 'taglist.vim'
-""Bundle 'templates.vim'
-""Bundle 'vimim.vim'
+"Bundle 'templates.vim'
 "Bundle 'ZenCoding.vim'
 "Bundle 'css_color.vim'
 "Bundle 'hallettj/jslint.vim'
-"
 "Bundle 'c.vim'
 "Bundle 'snipMate'
 "Bundle 'lint.vim'
 "Bundle 'benmills/vimux'
+
+"=====================================================================================
+" last config
+"=====================================================================================
+if &diff != 0
+    syntax off
+endif
+
+if expand('%') == "cscope.files"
+    cs add cscope.out
+endif
+
+function StarWM()
+    only
+endfunction
