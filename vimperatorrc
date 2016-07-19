@@ -7,7 +7,9 @@ set hintchars=asdfhjkl
 map s :buffer!<Space>
 map b <C-b>
 map B :back<Return>
-map t :!imswitch 0<Return> :tabopen <Space>
+map t :silent !imswitch 0<Return> :tabopen <Space>
+nnoremap f :silent !imswitch 0<Return>f
+nnoremap F :silent !imswitch 0<Return>F
 
 noremap j 6j
 noremap k 6k
@@ -20,10 +22,14 @@ noremap K gT
 noremap h gT
 noremap l gt
 
-noremap aa  :js ZoteroPane.addItemFromPage();<Return>
-
 imap jj <ESC>
+
+hi HintElem     background-color:rgba(200, 200, 50, 0.3);  border-radius: 2px;
+hi Hint         font-size: 11px; font-weight:bold; background: #6BA7EF; text-transform: uppercase; color:white; padding: 2px 5px;
+
 " vim: set ft=vimperator:
+
+noremap aa  :js ZoteroPane.addItemFromPage();<Return>
 command zscrapy js ZoteroPane.addItemFromPage();
 command zopen emenu Zotero
 "command zscrape js Zotero_Browser.scrapeThisPage(".")
@@ -33,5 +39,4 @@ command zopen emenu Zotero
 "noremap aa :js ZoteroPane.addItemFromPage();<Return>
 source! /root/.vimperatorrc.local
 
-hi HintElem     background-color:rgba(200, 200, 50, 0.3);  border-radius: 2px;
-hi Hint         font-size: 11px; font-weight:bold; background: #6BA7EF; text-transform: uppercase; color:white; padding: 2px 5px;
+
