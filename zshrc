@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-set -o vi
+#set -o vi
 alias mtr='mtr --curses'
 alias cls='clear'
 alias ll='ls -l'
