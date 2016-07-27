@@ -10,22 +10,32 @@ colorscheme desert
 set background=dark                             " use a dark background
 syntax on                                       " syntax highlighting
 
-"=====================================================================================
 " Pmenu highlight
-"=====================================================================================
-highlight Pmenu ctermbg=black ctermfg=darkcyan
-highlight PmenuSel ctermbg=black ctermfg=yellow
+"-------------------------------------------------------------------------------------
+hi Pmenu        ctermbg=black       ctermfg=darkcyan
+hi PmenuSel     ctermbg=black       ctermfg=yellow
 
-"=====================================================================================
 " Vimdiff highlight
-"=====================================================================================
-" to adjust the color setting when use vimdiff:
-highlight DiffAdd         ctermfg=Blue ctermbg=Black
-highlight DiffChange      ctermfg=Grey ctermbg=Black
-highlight DiffDelete      ctermfg=DarkCyan ctermbg=Black
-highlight DiffText        ctermfg=Red ctermbg=Black
+"-------------------------------------------------------------------------------------
+hi DiffAdd      ctermfg=Blue        ctermbg=Black
+hi DiffChange   ctermfg=Grey        ctermbg=Black
+hi DiffDelete   ctermfg=DarkCyan    ctermbg=Black
+hi DiffText     ctermfg=Red         ctermbg=Black
 
+" StatusLine & Split highlight
+"-------------------------------------------------------------------------------------
+hi StatusLine   cterm=NONE      ctermfg=white      ctermbg=DarkBlue 
+hi StatusLineNC cterm=NONE      ctermfg=white      ctermbg=DarkBlue 
+hi VertSplit    cterm=NONE      ctermfg=DarkBlue   ctermbg=DarkBlue
 
+" Gui highlight
+"-------------------------------------------------------------------------------------
+hi Normal       gui=NONE    guibg=Grey8
+hi Folded       gui=NONE    guibg=grey8 
+hi FoldColumn   gui=NONE    guibg=grey8 
+hi NonText      gui=NONE    guibg=grey8
+hi StatusLine   gui=NONE    guifg=grey8
+hi StatusLineNC gui=NONE    guifg=grey8
 
 "=====================================================================================
 " encoding
@@ -59,6 +69,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 let mapleader = "s"
 let g:mapleader = "s"
 nmap s <nop>
+vmap s <nop>
 
 " map for window and buffer switch
 "-------------------------------------------------------------------------------------
@@ -96,7 +107,7 @@ map <C-l> <C-W>l
 " map for start windowmager
 "-------------------------------------------------------------------------------------
 nmap <leader>w :b!1<CR>:only!<CR>:resize 200<CR>:e!~/.vim/file.tmp<CR>:WMToggle<CR>:b!1<CR><C-w>k<C-w>J:resize 1<CR><C-w>k<C-w>l<C-w>H:vertical resize 120<CR><C-l><C-k>w:resize 15<CR><C-w>h<C-w>k:b!1<CR>
-
+"nmap <leader>w :only!<CR>:resize 200<CR>:WMToggle<CR><C-w>l<C-w>H:vertical resize 120<CR><C-l><C-k>w:resize 15<CR><C-w>h<C-w>k
 " map for buffer swap command
 "-------------------------------------------------------------------------------------
 nmap <silent><leader>n :bn<CR>
