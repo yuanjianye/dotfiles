@@ -1,0 +1,13 @@
+#!/bin/sh
+if [ "$(tmux show-window-options -g|grep mode-mouse|awk '{print $2}')" = "on" ]; 
+then 
+    tmux set-window-option -g mode-mouse off
+    tmux set-window-option -g mouse-select-pane off
+    tmux set-window-option -g mouse-resize-pane off
+    tmux set-window-option -g mouse-select-window off
+else 
+    tmux set-window-option -g mode-mouse on
+    tmux set-window-option -g mouse-select-pane on
+    tmux set-window-option -g mouse-resize-pane on
+    tmux set-window-option -g mouse-select-window on
+fi

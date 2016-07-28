@@ -2,3 +2,5 @@
 - remarkable: markdown guitool
 - meld: diff guitool
 - claws-mail: email guitool
+- ncdu: ncurse du command
+
