@@ -9,15 +9,15 @@ done
 cd `dirname $SCRIPT_FILE`
 
 MYDOT_FILES="
-    fbtermrc            $HOME/.fbtermrc
-    gitconfig           $HOME/.gitconfig
-    i3_config           $HOME/.i3/config
-    smb.conf            /etc/samba/smb.conf
-    tmux.conf           $HOME/.tmux.conf
-    vimperatorrc        $HOME/.vimperatorrc
     vimrc               /etc/vim/vimrc
     vsftpd.conf         /etc/vsftpd.conf
     w3m_config          /etc/w3m/config
+    smb.conf            /etc/samba/smb.conf
+    fbtermrc            $HOME/.fbtermrc
+    gitconfig           $HOME/.gitconfig
+    i3_config           $HOME/.i3/config
+    tmux.conf           $HOME/.tmux.conf
+    vimperatorrc        $HOME/.vimperatorrc
     zshrc               $HOME/.zshrc
 "
 
@@ -25,7 +25,6 @@ for FILE in $MYDOT_FILES
 do
     if [[ $FILE =~ '/' ]]
     then
-        echo link file $ORG_FILE to $FILE
         ln -sf $PWD/$ORG_FILE $FILE
         ls -l --color $FILE
     else
@@ -37,5 +36,5 @@ cd ./bin
 for FILE in $(ls)
 do
     ln -sf $PWD/$FILE $MY_BIN_FILE
+    ls -l --color $MY_BIN_FILE/$FILE
 done
-ls -l --color $MY_BIN_FILE
