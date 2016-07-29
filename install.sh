@@ -19,6 +19,7 @@ MYDOT_FILES="
     tmux.conf               $HOME/.tmux.conf
     vimperatorrc            $HOME/.vimperatorrc
     zshrc                   $HOME/.zshrc
+    yuan.zsh-theme          $HOME/.oh-my-zsh/themes/yuan.zsh-theme
     roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Default
     roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Tango
     roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
