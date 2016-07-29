@@ -9,21 +9,29 @@ done
 cd `dirname $SCRIPT_FILE`
 
 MYDOT_FILES="
-    vimrc               /etc/vim/vimrc
-    vsftpd.conf         /etc/vsftpd.conf
-    w3m_config          /etc/w3m/config
-    smb.conf            /etc/samba/smb.conf
-    fbtermrc            $HOME/.fbtermrc
-    gitconfig           $HOME/.gitconfig
-    i3_config           $HOME/.i3/config
-    tmux.conf           $HOME/.tmux.conf
-    vimperatorrc        $HOME/.vimperatorrc
-    zshrc               $HOME/.zshrc
+    vimrc                   /etc/vim/vimrc
+    vsftpd.conf             /etc/vsftpd.conf
+    w3m_config              /etc/w3m/config
+    smb.conf                /etc/samba/smb.conf
+    fbtermrc                $HOME/.fbtermrc
+    gitconfig               $HOME/.gitconfig
+    i3_config               $HOME/.i3/config
+    tmux.conf               $HOME/.tmux.conf
+    vimperatorrc            $HOME/.vimperatorrc
+    zshrc                   $HOME/.zshrc
+    roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Default
+    roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Tango
+    roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
+    roxterm/RoxProfile      $HOME/.config/roxterm.sourceforge.net/Profiles/Default
+    roxterm/RoxShortcut     $HOME/.config/roxterm.sourceforge.net/Shortcuts/Default
 "
+mkdir -p $HOME/.config/roxterm.sourceforge.net/Colours
+mkdir -p $HOME/.config/roxterm.sourceforge.net/Profiles
+mkdir -p $HOME/.config/roxterm.sourceforge.net/Shortcuts
 
 for FILE in $MYDOT_FILES 
 do
-    if [[ $FILE =~ '/' ]]
+    if [[ ${FILE:0:1} == '/' ]]
     then
         ln -sf $PWD/$ORG_FILE $FILE
         ls -l --color $FILE
