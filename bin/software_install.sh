@@ -6,7 +6,8 @@ apt-get install ack-grep
 
 #android development
 apt-get install binutils gperf build-essential curl libxml2-utils bison flex git zip valgrind texinfo
-apt-get install lib32z1 lib32stdc++-4.9-dev g++-multilib g++-4.9-multilib 
+apt-get install gcc-multilib g++-multilib
+apt-get install u-boot-tools
 
 #jdk
 apt-get install openjdk-7-jdk
@@ -22,10 +23,10 @@ apt-get install roxterm meld claws-mail firefox remarkable
 apt-get install iceweasel
 
 #desktop
-apt-get install mate-desktop-environment-extras
+apt-get install mate-desktop-environment-extras fcitx pulseaudio xdotool xclip
 
 #python
-apt-get install python-pip python-jedi
+apt-get install python-pip python-jedi ipython
 
 #code-tool
 apt-get install ctags cscope astyle
@@ -36,3 +37,14 @@ apt-get install npm
 #other
 apt-get install pidgin sdcv glances ncdu sshfs 
 
+#sougou input
+wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
+dpkg -i /tmp/sougou_64.deb
+
+#vim vundle
+mkdir -p $HOME/.vim/bundle
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+#todo vim BundleInstall
+
+#oh-my-zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
