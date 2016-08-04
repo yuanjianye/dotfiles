@@ -56,7 +56,7 @@ plugins=(autojump adb)
 # User configuration
 
 #export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/java/jdk1.7.0_65/bin:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
-export PATH="/usr/local/java/jdk1.7.0_65/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
+export PATH="/usr/local/java/jdk1.6.0_35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -120,4 +120,4 @@ alias -s log=vi
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
-export JAVA_HOME="/usr/local/java/jdk1.7.0_65"
+export JAVA_HOME="/usr/local/java/jdk1.6.0_35"

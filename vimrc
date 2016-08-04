@@ -176,8 +176,9 @@ set linespace=0                                 " space it out a little more (ea
 set wildmenu                                    " type :h and press <Tab> to look what happens
 set ruler                                       " always show current position along the bottom
 set cmdheight=1                                 " use 2 screen lines for command-line
-set lazyredraw                                  " do not redraw while executing macros (much faster)
+"set lazyredraw                                  " do not redraw while executing macros (much faster)
 set nonumber                                    " don't print line number
+"set relativenumber
 set hid                                         " allow to change buffer without saving
 "set backspace=2                                " make backspace work normal
 set backspace=eol,start,indent                  " Configure backspace so it acts as it should act
@@ -339,7 +340,7 @@ Bundle 'vimrepress'
 Bundle 'davidhalter/jedi-vim'
 
 Bundle 'vimwiki'
-"Bundle 'mattn/calendar-vim'
+Bundle 'mattn/calendar-vim'
 "Bundle 'amoffat/snake'
 
 " Game
