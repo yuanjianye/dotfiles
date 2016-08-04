@@ -37,10 +37,6 @@ apt-get install npm
 #other
 apt-get install pidgin sdcv glances ncdu sshfs 
 
-#sougou input
-wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
-dpkg -i /tmp/sougou_64.deb
-
 #vim vundle
 mkdir -p $HOME/.vim/bundle
 git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
@@ -48,3 +44,11 @@ git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 #oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+
+#sougou input
+if [ ! -d /usr/share/fcitx/sogou ];
+then
+    wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
+    dpkg -i /tmp/sougou_64.deb
+fi
+
