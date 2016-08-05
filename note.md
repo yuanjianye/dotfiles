@@ -13,5 +13,7 @@
 - Pretty Baidu
 - Markdown Viewer
 - Zotero
-
+- Epubreader: epub reader
+- Chmfox: chm reader
+- Firebug: firefox html develop plugin 
 
