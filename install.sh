@@ -51,6 +51,11 @@ do
     fi
 done
 
+mv $HOME/.config/dconf/user $HOME/.config/dconf/user.bak
+dconf load / <./dconf.dump
+dconf update
+ls -l --color $HOME/.config/dconf/user
+
 cd ./bin
 for FILE in $(ls)
 do
