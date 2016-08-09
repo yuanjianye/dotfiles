@@ -25,10 +25,20 @@ MYDOT_FILES="
     roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
     roxterm/RoxProfile      $HOME/.config/roxterm.sourceforge.net/Profiles/Default
     roxterm/RoxShortcut     $HOME/.config/roxterm.sourceforge.net/Shortcuts/Default
+    mate_theme_yuan.theme   $HOME/.themes/mate_theme_yuan/index.theme
+    fcitx/config            $HOME/.config/fcitx/config
+    fcitx/fcitx-ui.config   $HOME/.config/fcitx/conf/fcitx-classic-ui.config 
+    fcitx/fcitx_skin.conf   $HOME/.config/fcitx/skin/classic/fcitx_skin.conf
 "
+
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Colours
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Profiles
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Shortcuts
+
+mkdir -p $HOME/.themes/mate_theme_yuan
+
+mkdir -p $HOME/.config/fcitx/conf
+mkdir -p $HOME/.config/fcitx/skin/classic
 
 for FILE in $MYDOT_FILES 
 do

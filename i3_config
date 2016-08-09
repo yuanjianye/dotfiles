@@ -3,7 +3,7 @@ set $mod Mod1
 new_window none
 
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font xft:Microsoft YaHei 12
+font xft:Noto Sans CJK SC Medium 12
 
 floating_modifier $mod
 

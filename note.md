@@ -16,4 +16,5 @@
 - Epubreader: epub reader
 - Chmfox: chm reader
 - Firebug: firefox html develop plugin 
-
+- Xpath Checker: Xpath tool
+- FirePath: Xpath extension for Firebug

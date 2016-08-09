@@ -16,14 +16,14 @@ apt-get install openjdk-7-jdk
 apt-get install samba vsftpd openssh-server apache2
 
 #net tools
-apt-get install openvpn vtun bridge-utils nmap iptables mtr iperf
+apt-get install openvpn vtun bridge-utils nmap iptables mtr iperf sshfs tcpdump
 
 #gui tools
 apt-get install roxterm meld claws-mail firefox remarkable
 apt-get install iceweasel
 
 #desktop
-apt-get install mate-desktop-environment-extras fcitx pulseaudio xdotool xclip
+apt-get install mate-desktop-environment-extras fcitx pulseaudio xdotool xclip dconf-cli
 
 #python
 apt-get install python-pip python-jedi ipython
@@ -35,7 +35,7 @@ apt-get install ctags cscope astyle
 apt-get install npm
 
 #other
-apt-get install pidgin sdcv glances ncdu sshfs 
+apt-get install pidgin sdcv glances ncdu fonts-noto-cjk
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle
