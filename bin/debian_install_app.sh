@@ -19,8 +19,9 @@ apt-get install samba vsftpd openssh-server apache2
 apt-get install openvpn vtun bridge-utils nmap iptables mtr iperf sshfs tcpdump
 
 #gui tools
-apt-get install roxterm meld claws-mail firefox remarkable
+apt-get install roxterm meld claws-mail firefox
 apt-get install iceweasel
+apt-get install remarkable
 
 #desktop
 apt-get install mate-desktop-environment-extras fcitx pulseaudio xdotool xclip dconf-cli
@@ -46,7 +47,7 @@ git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 
 #sougou input
-if [ ! -d /usr/share/fcitx/sogou ];
+if [ ! -d /usr/share/fcitx/sogou ] && [ ! -d /usr/share/fcitx-sogoupinyin ];
 then
     wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
     dpkg -i /tmp/sougou_64.deb

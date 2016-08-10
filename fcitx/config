@@ -60,11 +60,11 @@ IMSwitchKey=False
 # 切换全角
 #FullWidthSwitchKey=
 # 切换全角标点
-#PuncSwitchKey=CTRL_.
+PuncSwitchKey=
 # 上一页
-#PrevPageKey=- UP
+PrevPageKey=-
 # 下一页
-#NextPageKey== DOWN
+NextPageKey==
 # 选择第二第三候选词
 #SecondThirdCandWordKey=
 # 保存配置及输入历史
@@ -77,7 +77,7 @@ IMSwitchKey=False
 #NextWord=TAB
 
 [Program]
-# Fcitx 真正启动前延迟的秒数
+# Fcitx真正启动前延迟的秒数
 #DelayStart=0
 # 在窗口间共享状态
 # Available Value:

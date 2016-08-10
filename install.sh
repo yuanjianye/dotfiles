@@ -22,7 +22,7 @@ MYDOT_FILES="
     zshrc                   $HOME/.zshrc
     yuan.zsh-theme          $HOME/.oh-my-zsh/themes/yuan.zsh-theme
     roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Default
-    roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Tango
+    roxterm/RoxTango        $HOME/.config/roxterm.sourceforge.net/Colours/Tango
     roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
     roxterm/RoxProfile      $HOME/.config/roxterm.sourceforge.net/Profiles/Default
     roxterm/RoxShortcut     $HOME/.config/roxterm.sourceforge.net/Shortcuts/Default
