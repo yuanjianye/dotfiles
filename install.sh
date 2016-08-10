@@ -13,6 +13,7 @@ MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     w3m_config              /etc/w3m/config
     smb.conf                /etc/samba/smb.conf
+    fonts_local.conf        /etc/fonts/local.conf
     fbtermrc                $HOME/.fbtermrc
     gitconfig               $HOME/.gitconfig
     i3_config               $HOME/.i3/config
