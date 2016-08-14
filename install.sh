@@ -32,6 +32,8 @@ MYDOT_FILES="
     fcitx/fcitx_skin.conf   $HOME/.config/fcitx/skin/classic/fcitx_skin.conf
 "
 
+mkdir -p $HOME/.i3
+
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Colours
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Profiles
 mkdir -p $HOME/.config/roxterm.sourceforge.net/Shortcuts

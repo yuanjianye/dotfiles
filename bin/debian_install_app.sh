@@ -1,42 +1,91 @@
 apt-get update
 
 #base tools
-apt-get install git subversion vim tmux zsh i3 nodejs w3m fbterm
-apt-get install ack-grep
+apt-get -ym -qq install git 
+apt-get -ym -qq install subversion 
+apt-get -ym -qq install vim 
+apt-get -ym -qq install tmux 
+apt-get -ym -qq install zsh 
+apt-get -ym -qq install i3 
+apt-get -ym -qq install nodejs 
+apt-get -ym -qq install w3m 
+apt-get -ym -qq install fbterm
+apt-get -ym -qq install ack-grep
+apt-get -ym -qq install locate
 
 #android development
-apt-get install binutils gperf build-essential curl libxml2-utils bison flex git zip valgrind texinfo
-apt-get install gcc-multilib g++-multilib
-apt-get install u-boot-tools
+apt-get -ym -qq install binutils 
+apt-get -ym -qq install gperf 
+apt-get -ym -qq install build-essential 
+apt-get -ym -qq install curl 
+apt-get -ym -qq install libxml2-utils 
+apt-get -ym -qq install bison 
+apt-get -ym -qq install flex 
+apt-get -ym -qq install git 
+apt-get -ym -qq install zip 
+apt-get -ym -qq install valgrind 
+apt-get -ym -qq install texinfo
+apt-get -ym -qq install gcc-multilib 
+apt-get -ym -qq install g++-multilib
+apt-get -ym -qq install u-boot-tools
 
 #jdk
-apt-get install openjdk-7-jdk
+apt-get -ym -qq install openjdk-7-jdk
 
 #net server
-apt-get install samba vsftpd openssh-server apache2
+apt-get -ym -qq install samba 
+apt-get -ym -qq install vsftpd 
+apt-get -ym -qq install openssh-server 
+apt-get -ym -qq install apache2
 
 #net tools
-apt-get install openvpn vtun bridge-utils nmap iptables mtr iperf sshfs tcpdump
+apt-get -ym -qq install openvpn 
+apt-get -ym -qq install vtun 
+apt-get -ym -qq install bridge-utils 
+apt-get -ym -qq install nmap 
+apt-get -ym -qq install iptables 
+apt-get -ym -qq install mtr 
+apt-get -ym -qq install iperf 
+apt-get -ym -qq install sshfs 
+apt-get -ym -qq install tcpdump
 
 #gui tools
-apt-get install roxterm meld claws-mail firefox
-apt-get install iceweasel
-apt-get install remarkable
+apt-get -ym -qq install roxterm 
+apt-get -ym -qq install meld 
+apt-get -ym -qq install claws-mail 
+apt-get -ym -qq install firefox
+apt-get -ym -qq install iceweasel
+apt-get -ym -qq install remarkable
 
 #desktop
-apt-get install mate-desktop-environment-extras fcitx pulseaudio xdotool xclip dconf-cli
+apt-get -ym -qq install xserver-xorg
+apt-get -ym -qq install mate-desktop-environment-extras 
+apt-get -ym -qq install fcitx 
+apt-get -ym -qq install pulseaudio 
+apt-get -ym -qq install xdotool 
+apt-get -ym -qq install xclip 
+apt-get -ym -qq install dconf-cli
 
 #python
-apt-get install python-pip python-jedi ipython
+apt-get -ym -qq install python-pip 
+apt-get -ym -qq install python-jedi 
+apt-get -ym -qq install ipython
 
 #code-tool
-apt-get install ctags cscope astyle
+apt-get -ym -qq install ctags 
+apt-get -ym -qq install cscope 
+apt-get -ym -qq install astyle
 
 #node.js
-apt-get install npm
+apt-get -ym -qq install npm
 
 #other
-apt-get install pidgin sdcv glances ncdu fonts-noto-cjk
+apt-get -ym -qq install pidgin 
+apt-get -ym -qq install sdcv 
+apt-get -ym -qq install glances 
+apt-get -ym -qq install ncdu 
+apt-get -ym -qq install fonts-noto-cjk
+apt-get -ym -qq install unrar
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle
