@@ -100,5 +100,6 @@ if [ ! -d /usr/share/fcitx/sogou ] && [ ! -d /usr/share/fcitx-sogoupinyin ];
 then
     wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
     dpkg -i /tmp/sougou_64.deb
+    apt-get -f install
 fi
 
