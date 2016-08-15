@@ -37,7 +37,7 @@ InactivateKey=CTRL_F10
 # 启用输入法间切换
 # Available Value:
 # True False
-IMSwitchKey=False
+#IMSwitchKey=True
 # 输入法间切换时包含未激活状态
 # Available Value:
 # True False
@@ -48,7 +48,7 @@ IMSwitchKey=False
 # ALT_SHIFT
 # CTRL_SUPER
 # ALT_SUPER
-#IMSwitchHotkey=CTRL_SHIFT
+IMSwitchHotkey=CTRL_SUPER
 # 重新载入配置
 #ReloadConfig=CTRL_5
 # 输入间隔
@@ -77,7 +77,7 @@ NextPageKey==
 #NextWord=TAB
 
 [Program]
-# Fcitx真正启动前延迟的秒数
+# Fcitx 真正启动前延迟的秒数
 #DelayStart=0
 # 在窗口间共享状态
 # Available Value:
