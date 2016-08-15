@@ -86,6 +86,7 @@ apt-get -ym -qq install glances
 apt-get -ym -qq install ncdu 
 apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
+apt-get -ym -qq install lsof
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle
