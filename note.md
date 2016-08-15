@@ -18,6 +18,7 @@
 - Firebug: firefox html develop plugin 
 - Xpath Checker: Xpath tool
 - FirePath: Xpath extension for Firebug
+- stylish
 
 ### 暂时无法自动化的工作
 - firefox 插件安装
