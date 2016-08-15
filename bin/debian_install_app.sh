@@ -87,6 +87,7 @@ apt-get -ym -qq install ncdu
 apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
 apt-get -ym -qq install lsof
+apt-get -ym -qq install ntpdate
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle

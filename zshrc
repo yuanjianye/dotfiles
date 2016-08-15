@@ -55,8 +55,17 @@ plugins=(autojump adb)
 
 # User configuration
 
-#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/java/jdk1.7.0_65/bin:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
-export PATH="/usr/local/java/jdk1.6.0_35/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
+#standard path
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+#jdk path
+export PATH="/usr/local/java/jdk1.6.0_35/bin:$PATH"
+#hisi path
+export PATH="$PATH:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin"
+#ndk path
+export PATH="$PATH:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin"
+#amlogic path
+export PATH="$PATH:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,14 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 #set -o vi
 alias mtr='mtr --curses'
 alias cls='clear'
@@ -97,26 +98,32 @@ alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias locate="locate --regex"
 alias ack="ack-grep --smart-case"
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
-    --cache=$HOME/.npm/.cache/cnpm \
-    --disturl=https://npm.taobao.org/dist \
-    --userconfig=$HOME/.cnpmrc"
 
 alias s='fanyi'
-alias -s html=vi   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
-alias -s rb=vi     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
-#alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
-#alias -s js=vi
+
+alias -s rb=vi
 alias -s c=vi
 alias -s java=vi
 alias -s txt=vi
 alias -s mk=vi
+alias -s makefile=vi
+alias -s Makefile=vi
+alias -s log=vi
+alias -s conf=vi
+#alias -s py=vi
+#alias -s js=vi
+
+alias -s html=firefox
+alias -s md=firefox
+alias -s chm=firefox
+alias -s epub=firefox
+alias -s pdf=firefox
+
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias -s pdf='firefox'
-alias -s log=vi
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
