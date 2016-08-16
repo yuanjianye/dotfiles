@@ -37,6 +37,7 @@ apt-get -ym -qq install samba
 apt-get -ym -qq install vsftpd 
 apt-get -ym -qq install openssh-server 
 apt-get -ym -qq install apache2
+apt-get -ym -qq install mysql-server
 
 #net tools
 apt-get -ym -qq install openvpn 
@@ -88,6 +89,9 @@ apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
 apt-get -ym -qq install lsof
 apt-get -ym -qq install ntpdate
+
+#virtual machine
+apt-get -ym -qq install virtualbox
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle
