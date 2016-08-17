@@ -43,6 +43,10 @@ mkdir -p $HOME/.themes/mate_theme_yuan
 mkdir -p $HOME/.config/fcitx/conf
 mkdir -p $HOME/.config/fcitx/skin/classic
 
+tar xf $PWD/Menlo.tar.xz -C /usr/share/fonts/truetype
+ls -l --color /usr/share/fonts/truetype/Menlo-Regular.ttf
+fc-cache
+
 for FILE in $MYDOT_FILES 
 do
     if [[ ${FILE:0:1} == '/' ]]

@@ -1,6 +1,6 @@
 [roxterm profile]
 colour_scheme=Tango
-font=DejaVu Sans Mono 11.5
+font=Menlo 11.5
 always_show_tabs=0
 show_add_tab_btn=0
 show_resize_grip=0
