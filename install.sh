@@ -21,6 +21,7 @@ MYDOT_FILES="
     vimperatorrc            $HOME/.vimperatorrc
     zshrc                   $HOME/.zshrc
     yuan.zsh-theme          $HOME/.oh-my-zsh/themes/yuan.zsh-theme
+    mplayer_input.conf      $HOME/.mplayer/input.conf
     roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Default
     roxterm/RoxTango        $HOME/.config/roxterm.sourceforge.net/Colours/Tango
     roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
