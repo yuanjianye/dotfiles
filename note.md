@@ -27,3 +27,4 @@
 - ssh config, openvpn config(for secure)
 - sun-java-jdk install (todo)
 - debian sources.list add for noto
+- update-rc.d i3_desktop default

@@ -14,5 +14,5 @@ sleep 1
 i3 &
 mate-settings-daemon &
 pulseaudio --start
-sleep 1
+sleep 3
 fcitx &

@@ -14,6 +14,7 @@ MYDOT_FILES="
     w3m_config              /etc/w3m/config
     smb.conf                /etc/samba/smb.conf
     fonts_local.conf        /etc/fonts/local.conf
+    i3_desktop              /etc/init.d/i3_desktop
     fbtermrc                $HOME/.fbtermrc
     gitconfig               $HOME/.gitconfig
     i3_config               $HOME/.i3/config
