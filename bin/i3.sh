@@ -12,9 +12,7 @@ export XMODIFIERS='@im=fcitx'
 X :1 &
 sleep 1
 i3 &
-sleep 1
 mate-settings-daemon &
+pulseaudio --start
 sleep 1
 fcitx &
-sleep 1
-pulseaudio --start
