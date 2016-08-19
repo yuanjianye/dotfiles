@@ -51,7 +51,7 @@ apt-get -ym -qq install sshfs
 apt-get -ym -qq install tcpdump
 
 #gui tools
-apt-get -ym -qq install roxterm 
+apt-get -ym -qq install terminator
 apt-get -ym -qq install meld 
 apt-get -ym -qq install claws-mail 
 apt-get -ym -qq install firefox

@@ -9,12 +9,12 @@ done
 cd `dirname $SCRIPT_FILE`
 
 MYDOT_FILES="
-    vimrc                   /etc/vim/vimrc
     vsftpd.conf             /etc/vsftpd.conf
-    w3m_config              /etc/w3m/config
     smb.conf                /etc/samba/smb.conf
+    w3m_config              /etc/w3m/config
     fonts_local.conf        /etc/fonts/local.conf
     i3_desktop              /etc/init.d/i3_desktop
+    vimrc                   $HOME/.vimrc
     fbtermrc                $HOME/.fbtermrc
     gitconfig               $HOME/.gitconfig
     i3_config               $HOME/.i3/config
@@ -24,11 +24,6 @@ MYDOT_FILES="
     yuan.zsh-theme          $HOME/.oh-my-zsh/themes/yuan.zsh-theme
     mplayer_input.conf      $HOME/.mplayer/input.conf
     terminator_config       $HOME/.config/terminator/config
-    roxterm/RoxColour       $HOME/.config/roxterm.sourceforge.net/Colours/Default
-    roxterm/RoxTango        $HOME/.config/roxterm.sourceforge.net/Colours/Tango
-    roxterm/RoxGlobal       $HOME/.config/roxterm.sourceforge.net/Global
-    roxterm/RoxProfile      $HOME/.config/roxterm.sourceforge.net/Profiles/Default
-    roxterm/RoxShortcut     $HOME/.config/roxterm.sourceforge.net/Shortcuts/Default
     mate_theme_yuan.theme   $HOME/.themes/mate_theme_yuan/index.theme
     fcitx/config            $HOME/.config/fcitx/config
     fcitx/fcitx-ui.config   $HOME/.config/fcitx/conf/fcitx-classic-ui.config 
@@ -36,11 +31,7 @@ MYDOT_FILES="
 "
 
 mkdir -p $HOME/.i3
-
-mkdir -p $HOME/.config/roxterm.sourceforge.net/Colours
-mkdir -p $HOME/.config/roxterm.sourceforge.net/Profiles
-mkdir -p $HOME/.config/roxterm.sourceforge.net/Shortcuts
-
+mkdir -p $HOME/.config/terminator
 mkdir -p $HOME/.themes/mate_theme_yuan
 
 mkdir -p $HOME/.config/fcitx/conf
@@ -71,3 +62,5 @@ do
     ln -sf $PWD/$FILE $MY_BIN_FILE
     ls -l --color $MY_BIN_FILE/$FILE
 done
+
+update-rc.d i3_desktop defaults
