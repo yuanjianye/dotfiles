@@ -7,7 +7,7 @@ font xft:Noto Sans CJK SC Medium 12
 
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id mate-terminal
+bindsym $mod+Return exec --no-startup-id terminator
 bindsym $mod+space exec --no-startup-id firefox 
 
 bindsym $mod+q kill
