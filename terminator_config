@@ -45,7 +45,7 @@
 [profiles]
   [[default]]
     foreground_color = "#bababa"
-    palette = "#181818:#cc0000:#00c600:#c4a000:#454557:#d33682:#00b4b7:#bababa:#555753:#ef2929:#73d216:#fce94f:#729fcf:#ba31c0:#34e2e2:#d3d7cf"
+    palette = "#1c1c1c:#cc0000:#00c600:#c4a000:#454557:#d33682:#00b4b7:#bababa:#555753:#ef2929:#73d216:#fce94f:#729fcf:#ba31c0:#34e2e2:#d3d7cf"
     alternate_screen_scroll = False
     background_image = None
     custom_command = tmuxa.sh
@@ -59,7 +59,7 @@
     scrollbar_position = hidden
     show_titlebar = False
     font = Menlo 11
-    background_color = "#181818"
+    background_color = "#1c1c1c"
     allow_bold = False
     scrollback_infinite = True
 [layouts]

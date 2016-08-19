@@ -38,7 +38,12 @@ command ysimg set! premissions.default.image=1
 command nojs set! javascript.enabled=false
 command ysjs set! javascript.enabled=true
 
-command weixin :tabopen https://wx2.qq.com
+command setting tabopen about:preferences
+command weixin  tabopen https://wx2.qq.com
+command weibo   tabopen https://weibo.com
+command baidu   tabopen https://www.baidu.com
+command news    tabopen https://news.sina.com.cn
+command app     set apptab=true
 
 noremap aa  :js ZoteroPane.addItemFromPage();<Return>
 command zscrapy js ZoteroPane.addItemFromPage();
