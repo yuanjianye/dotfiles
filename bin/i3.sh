@@ -9,11 +9,13 @@ export QT4_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export TEXTDOMAIN=fcitx
 export XMODIFIERS='@im=fcitx'
+export TZ='Asia/Shanghai'
+
 X :1 &
 sleep 1
 i3 &
 mate-settings-daemon &
-pulseaudio --start
 i3-msg "exec --no-startup-id terminator"
-sleep 2
+pulseaudio --start
+sleep 3
 fcitx &
