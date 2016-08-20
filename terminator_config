@@ -58,7 +58,7 @@
     icon_bell = False
     scrollbar_position = hidden
     show_titlebar = False
-    font = Menlo 11
+    font = Menlo 10.5
     background_color = "#1c1c1c"
     allow_bold = False
     scrollback_infinite = True

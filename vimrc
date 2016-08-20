@@ -343,6 +343,12 @@ Bundle 'vimwiki'
 Bundle 'mattn/calendar-vim'
 "Bundle 'amoffat/snake'
 
+" Markdown
+"-------------------------------------------------------------------------------------
+Bundle 'suan/vim-instant-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'

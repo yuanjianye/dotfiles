@@ -1,4 +1,5 @@
-apt-get update
+#!/bin/bash
+apt-get -ym -qq update
 
 #base tools
 apt-get -ym -qq install git 
@@ -57,7 +58,6 @@ apt-get -ym -qq install meld
 apt-get -ym -qq install claws-mail 
 apt-get -ym -qq install firefox
 apt-get -ym -qq install iceweasel
-apt-get -ym -qq install remarkable
 
 #desktop
 apt-get -ym -qq install xserver-xorg
@@ -97,7 +97,6 @@ apt-get -ym -qq install virtualbox
 #vim vundle
 mkdir -p $HOME/.vim/bundle
 git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
-#todo vim BundleInstall
 
 #oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
@@ -110,3 +109,8 @@ then
     apt-get -f install
 fi
 
+which cnpm >/dev/null 2>&1
+if [ "$?" == "0" ];
+then
+    cnpm -g install instant-markdown-d
+fi

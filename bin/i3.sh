@@ -15,7 +15,8 @@ X :1 &
 sleep 1
 i3 &
 mate-settings-daemon &
-i3-msg "exec --no-startup-id terminator"
 pulseaudio --start
-sleep 3
+sleep 1
+i3-msg "exec --no-startup-id terminator"
+sleep 2
 fcitx &
