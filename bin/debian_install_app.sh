@@ -51,6 +51,7 @@ apt-get -ym -qq install iperf
 apt-get -ym -qq install sshfs 
 apt-get -ym -qq install tcpdump
 apt-get -ym -qq install aria2
+apt-get -ym -qq install cifs-utils
 
 #gui tools
 apt-get -ym -qq install terminator
