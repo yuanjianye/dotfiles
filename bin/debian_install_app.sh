@@ -87,6 +87,7 @@ apt-get -ym -qq install pidgin
 apt-get -ym -qq install sdcv 
 apt-get -ym -qq install glances 
 apt-get -ym -qq install ncdu 
+apt-get -ym -qq install fonts-droid
 apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
 apt-get -ym -qq install lsof
