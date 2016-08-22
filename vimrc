@@ -24,15 +24,15 @@ hi DiffText     ctermfg=Red         ctermbg=Black
 
 " StatusLine & Split highlight
 "-------------------------------------------------------------------------------------
-hi StatusLine   cterm=NONE      ctermfg=white      ctermbg=DarkBlue 
-hi StatusLineNC cterm=NONE      ctermfg=white      ctermbg=DarkBlue 
-hi VertSplit    cterm=NONE      ctermfg=DarkBlue   ctermbg=DarkBlue
+hi StatusLine   cterm=NONE      ctermfg=Yellow       ctermbg=DarkBlue
+hi StatusLineNC cterm=NONE      ctermfg=Yellow       ctermbg=DarkBlue
+hi VertSplit    cterm=NONE      ctermfg=Yellow       ctermbg=DarkBlue
 
 " Gui highlight
 "-------------------------------------------------------------------------------------
 hi Normal       gui=NONE    guibg=Grey8
-hi Folded       gui=NONE    guibg=grey8 
-hi FoldColumn   gui=NONE    guibg=grey8 
+hi Folded       gui=NONE    guibg=grey8
+hi FoldColumn   gui=NONE    guibg=grey8
 hi NonText      gui=NONE    guibg=grey8
 hi StatusLine   gui=NONE    guifg=grey8
 hi StatusLineNC gui=NONE    guifg=grey8
