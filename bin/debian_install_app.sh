@@ -112,6 +112,8 @@ then
     apt-get -f install
 fi
 
+pip -q install fanyi
+
 which cnpm >/dev/null 2>&1
 if [ "$?" == "0" ];
 then
