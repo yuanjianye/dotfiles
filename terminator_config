@@ -51,7 +51,7 @@
     copy_on_selection = True
     alternate_screen_scroll = False
     background_image = None
-    custom_command = tmuxa.sh
+    custom_command = zsh 
     cursor_shape = underline
     use_system_font = False
     cursor_blink = False
