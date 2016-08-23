@@ -65,6 +65,7 @@ apt-get -ym -qq install xserver-xorg
 apt-get -ym -qq install mate-desktop-environment-extras 
 apt-get -ym -qq install fcitx 
 apt-get -ym -qq install pulseaudio 
+apt-get -ym -qq install alsa-utils  
 apt-get -ym -qq install xdotool 
 apt-get -ym -qq install xclip 
 apt-get -ym -qq install dconf-cli
