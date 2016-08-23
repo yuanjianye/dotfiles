@@ -1,5 +1,7 @@
 [global_config]
   geometry_hinting = False
+  title_hide_sizetext = True
+  hide_from_taskbar = True
   enabled_plugins = ,
   borderless = True
 [keybindings]
@@ -46,6 +48,7 @@
   [[default]]
     foreground_color = "#bababa"
     palette = "#1c1c1c:#cc0000:#00c600:#c4a000:#454557:#d33682:#00b4b7:#bababa:#555753:#ef2929:#73d216:#fce94f:#729fcf:#ba31c0:#34e2e2:#d3d7cf"
+    copy_on_selection = True
     alternate_screen_scroll = False
     background_image = None
     custom_command = tmuxa.sh
@@ -58,7 +61,7 @@
     icon_bell = False
     scrollbar_position = hidden
     show_titlebar = False
-    font = Menlo 10.5
+    font = Menlo 11
     background_color = "#1c1c1c"
     allow_bold = False
     scrollback_infinite = True
