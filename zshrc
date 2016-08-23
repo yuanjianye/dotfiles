@@ -128,3 +128,8 @@ alias -s pdf='firefox'
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
 export JAVA_HOME="/usr/local/java/jdk1.6.0_35"
+
+if [ "$DISPLAY" = "" ];
+then
+    export DISPLAY=":1"
+fi
