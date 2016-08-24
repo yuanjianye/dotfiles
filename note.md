@@ -7,18 +7,18 @@
 - mtr: traceroute and ping
 
 ### Firefox插件
-- Vimperator
-- Adblock Plus
-- Default Full Zoom Level
-- Pretty Baidu
-- Markdown Viewer
-- Zotero
-- Epubreader: epub reader
-- Chmfox: chm reader
-- Firebug: firefox html develop plugin 
-- Xpath Checker: Xpath tool
-- FirePath: Xpath extension for Firebug
-- stylish
+- [Vimperator](https://addons.mozilla.org/zh-tw/firefox/addon/vimperator)
+- [Adblock Plus](https://addons.mozilla.org/zh-tw/firefox/addon/adblock-plus)
+- [Default Full Zoom Level](https://addons.mozilla.org/zh-tw/firefox/addon/default-fullzoom-level)
+- [Pretty Baidu](https://addons.mozilla.org/zh-tw/firefox/addon/pretty-baidu/)
+- [Markdown Viewer](https://addons.mozilla.org/zh-tw/firefox/addon/markdown-viewer)
+- [Zotero](https://www.zotero.org/download/)
+- [Epubreader](https://addons.mozilla.org/zh-tw/firefox/addon/epubreader)
+- [Chmfox](https://addons.mozilla.org/zh-tw/firefox/addon/chmfox)
+- [Firebug](https://addons.mozilla.org/zh-tw/firefox/addon/firebug)
+- [Xpath Checker](https://addons.mozilla.org/zh-tw/firefox/addon/xpath-checker)
+- [FirePath](https://addons.mozilla.org/zh-tw/firefox/addon/firepath)
+- [stylish](https://addons.mozilla.org/zh-tw/firefox/addon/stylish)
 
 ### 暂时无法自动化的工作
 - firefox 插件安装
