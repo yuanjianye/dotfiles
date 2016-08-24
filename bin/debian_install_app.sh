@@ -13,6 +13,7 @@ apt-get -ym -qq install w3m
 apt-get -ym -qq install fbterm
 apt-get -ym -qq install ack-grep
 apt-get -ym -qq install locate
+apt-get -ym -qq install aptitude
 
 #android development
 apt-get -ym -qq install binutils 
