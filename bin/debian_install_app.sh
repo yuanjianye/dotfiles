@@ -30,6 +30,9 @@ apt-get -ym -qq install gcc-multilib
 apt-get -ym -qq install g++-multilib
 apt-get -ym -qq install u-boot-tools
 
+apt-get -ym -qq install android-tools-adb
+apt-get -ym -qq install aapt
+
 #jdk
 apt-get -ym -qq install openjdk-7-jdk
 
