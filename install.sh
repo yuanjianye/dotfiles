@@ -28,6 +28,7 @@ MYDOT_FILES="
     fcitx/config            $HOME/.config/fcitx/config
     fcitx/fcitx-ui.config   $HOME/.config/fcitx/conf/fcitx-classic-ui.config 
     fcitx/fcitx_skin.conf   $HOME/.config/fcitx/skin/classic/fcitx_skin.conf
+    ranger/rifle.conf       $HOME/.config/ranger/rifle.conf 
 "
 
 mkdir -p $HOME/.i3
