@@ -5,6 +5,8 @@
 - ncdu: ncurse du command
 - glances: system monitor
 - mtr: traceroute and ping
+- ranger: cli filemanager
+- feh: photo viewer
 
 ### Firefox插件
 - [Vimperator](https://addons.mozilla.org/zh-tw/firefox/addon/vimperator)

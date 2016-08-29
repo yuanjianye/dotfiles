@@ -97,6 +97,8 @@ apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
 apt-get -ym -qq install lsof
 apt-get -ym -qq install ntpdate
+apt-get -ym -qq install ranger
+apt-get -ym -qq install feh
 
 #virtual machine
 apt-get -ym -qq install virtualbox
