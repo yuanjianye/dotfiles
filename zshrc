@@ -98,7 +98,7 @@ alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias locate="locate --regex"
 alias ack="ack-grep --smart-case"
-alias feh="feh -F -r --zoom max"
+alias feh="feh -F -q -r --zoom max"
 
 alias s='fanyi'
 
