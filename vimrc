@@ -346,8 +346,8 @@ Bundle 'mattn/calendar-vim'
 " Markdown
 "-------------------------------------------------------------------------------------
 Bundle 'suan/vim-instant-markdown'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 " Game
 "-------------------------------------------------------------------------------------
