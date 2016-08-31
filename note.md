@@ -9,18 +9,18 @@
 - feh: photo viewer
 
 ### Firefox插件
-- [Vimperator](https://addons.mozilla.org/zh-tw/firefox/addon/vimperator)
-- [Adblock Plus](https://addons.mozilla.org/zh-tw/firefox/addon/adblock-plus)
-- [Default Full Zoom Level](https://addons.mozilla.org/zh-tw/firefox/addon/default-fullzoom-level)
-- [Pretty Baidu](https://addons.mozilla.org/zh-tw/firefox/addon/pretty-baidu/)
-- [Markdown Viewer](https://addons.mozilla.org/zh-tw/firefox/addon/markdown-viewer)
+- [Vimperator](https://addons.mozilla.org/zh-CN/firefox/addon/vimperator)
+- [Adblock Plus](https://addons.mozilla.org/zh-CN/firefox/addon/adblock-plus)
+- [Default Full Zoom Level](https://addons.mozilla.org/zh-CN/firefox/addon/default-fullzoom-level)
+- [Pretty Baidu](https://addons.mozilla.org/zh-CN/firefox/addon/pretty-baidu/)
+- [Markdown Viewer](https://addons.mozilla.org/zh-CN/firefox/addon/markdown-viewer)
 - [Zotero](https://www.zotero.org/download/)
-- [Epubreader](https://addons.mozilla.org/zh-tw/firefox/addon/epubreader)
-- [Chmfox](https://addons.mozilla.org/zh-tw/firefox/addon/chmfox)
-- [Firebug](https://addons.mozilla.org/zh-tw/firefox/addon/firebug)
-- [Xpath Checker](https://addons.mozilla.org/zh-tw/firefox/addon/xpath-checker)
-- [FirePath](https://addons.mozilla.org/zh-tw/firefox/addon/firepath)
-- [stylish](https://addons.mozilla.org/zh-tw/firefox/addon/stylish)
+- [Epubreader](https://addons.mozilla.org/zh-CN/firefox/addon/epubreader)
+- [Chmfox](https://addons.mozilla.org/zh-CN/firefox/addon/chmfox)
+- [Firebug](https://addons.mozilla.org/zh-CN/firefox/addon/firebug)
+- [Xpath Checker](https://addons.mozilla.org/zh-CN/firefox/addon/xpath-checker)
+- [FirePath](https://addons.mozilla.org/zh-CN/firefox/addon/firepath)
+- [stylish](https://addons.mozilla.org/zh-CN/firefox/addon/stylish)
 
 ### 暂时无法自动化的工作
 - firefox 插件安装
