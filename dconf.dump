@@ -1,18 +1,43 @@
+[org/gnome/terminal/legacy/keybindings]
+new-tab='disabled'
+switch-to-tab-1='disabled'
+find-previous='disabled'
+switch-to-tab-3='disabled'
+copy='<Primary><Shift>c'
+switch-to-tab-5='disabled'
+switch-to-tab-4='disabled'
+prev-tab='disabled'
+new-window='disabled'
+close-tab='disabled'
+find='disabled'
+full-screen='disabled'
+close-window='disabled'
+move-tab-left='disabled'
+switch-to-tab-9='disabled'
+find-next='disabled'
+move-tab-right='disabled'
+switch-to-tab-10='disabled'
+help='disabled'
+switch-to-tab-6='disabled'
+switch-to-tab-7='disabled'
+find-clear='disabled'
+next-tab='disabled'
+zoom-in='<Primary>equal'
+new-profile='disabled'
+switch-to-tab-2='disabled'
+switch-to-tab-8='disabled'
+
 [org/gnome/terminal/legacy]
 menu-accelerator-enabled=false
 default-show-menubar=false
-shortcuts-enabled=false
+shortcuts-enabled=true
 
-[org/gnome/terminal/legacy/profiles:]
-list=['93e2b548-081e-499c-9679-f66596d4ec29']
-default='93e2b548-081e-499c-9679-f66596d4ec29'
-
-[org/gnome/terminal/legacy/profiles:/:93e2b548-081e-499c-9679-f66596d4ec29]
-foreground-color='rgb(136,138,133)'
+[org/gnome/terminal/legacy/profiles:/:133f7f0f-a036-4ffe-af37-00c4de833995]
+foreground-color='rgb(186,186,186)'
 rewrap-on-resize=true
-visible-name='gnome-terminal-yuan'
-palette=['rgb(0,0,0)', 'rgb(143,89,2)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(5,26,37)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(136,138,133)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(191,64,140)', 'rgb(52,226,226)', 'rgb(136,138,133)']
-custom-command='zsh'
+visible-name='tango'
+palette=['rgb(28,28,28)', 'rgb(204,0,0)', 'rgb(0,198,0)', 'rgb(196,160,0)', 'rgb(69,69,87)', 'rgb(211,54,130)', 'rgb(0,180,183)', 'rgb(186,186,186)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(115,210,22)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(186,49,192)', 'rgb(52,226,226)', 'rgb(211,215,207)']
+custom-command='tmuxa.sh'
 cursor-shape='underline'
 use-custom-command=true
 use-theme-colors=false
@@ -21,11 +46,16 @@ update-records=false
 font='Menlo 11'
 allow-bold=false
 scrollback-unlimited=true
-bold-color-same-as-fg=false
+bold-color-same-as-fg=true
 bold-color='rgb(136,138,133)'
-background-color='rgb(0,0,0)'
+background-color='rgb(28,28,28)'
 audible-bell=false
 scrollbar-policy='never'
+
+[org/gnome/terminal/legacy/profiles:]
+list=['133f7f0f-a036-4ffe-af37-00c4de833995']
+default='133f7f0f-a036-4ffe-af37-00c4de833995'
+
 
 [org/gnome/gedit/preferences/editor]
 highlight-current-line=false
