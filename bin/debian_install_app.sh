@@ -59,6 +59,7 @@ apt-get -ym -qq install cifs-utils
 
 #gui tools
 apt-get -ym -qq install terminator
+apt-get -ym -qq install gnome-terminal
 apt-get -ym -qq install meld 
 apt-get -ym -qq install claws-mail 
 apt-get -ym -qq install firefox
