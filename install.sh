@@ -29,6 +29,7 @@ MYDOT_FILES="
     fcitx/fcitx-ui.config   $HOME/.config/fcitx/conf/fcitx-classic-ui.config
     fcitx/fcitx_skin.conf   $HOME/.config/fcitx/skin/classic/fcitx_skin.conf
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
+    percol.rc.py            $HOME/.percol.d/rc.py
 "
 #create directory
 mkdir -p $HOME/.i3
