@@ -120,6 +120,7 @@ then
 fi
 
 pip -q install fanyi
+pip -q install percol
 
 which cnpm >/dev/null 2>&1
 if [ "$?" == "0" ];

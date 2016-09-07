@@ -312,6 +312,7 @@ Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'ack.vim'
+Bundle 'SearchComplete'
 
 " InputMethod
 "-------------------------------------------------------------------------------------

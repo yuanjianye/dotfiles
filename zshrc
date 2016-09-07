@@ -96,9 +96,9 @@ alias ps='ps -aux'
 alias vi='vim'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
-alias locate="locate --regex"
 alias ack="ack-grep --smart-case"
 alias feh="feh -F -q -r --zoom max"
+alias fo="openfile"
 
 alias s='fanyi'
 
@@ -133,4 +133,19 @@ export JAVA_HOME="/usr/local/java/jdk1.6.0_35"
 if [ "$DISPLAY" = "" ];
 then
     export DISPLAY=":1"
+fi
+
+function exists { which $1 &> /dev/null }
+
+if exists percol; then
+    function percol_select_history() {
+        local tac
+        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+        BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+        CURSOR=$#BUFFER         # move cursor
+        zle -R -c               # refresh
+    }
+
+    zle -N percol_select_history
+    bindkey '^R' percol_select_history
 fi

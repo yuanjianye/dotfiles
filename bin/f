@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$*" == "" ];
+then
+    openfile "$(find |percol)"
+else
+    openfile "$(find "$*"|percol)"
+fi
