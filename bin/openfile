@@ -25,7 +25,11 @@ minordict = {
         "msword":"libreoffice",
         "msppt":"libreoffice",
         "vnd.ms-excel":"libreoffice",
-        "vnd.openxmlformats-officedocument.spreadsheetml.sheet":"libreoffice"
+        "vnd.openxmlformats-officedocument.spreadsheetml.sheet":"libreoffice",
+        "x-debian-package":"dpkg -c",
+        "x-rar":"unrar l",
+        "rar":"unrar l",
+        "vnd.rn-realmedia":"mplayer"
         }
 
 for mfile in args:
