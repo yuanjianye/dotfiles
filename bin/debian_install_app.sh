@@ -101,6 +101,7 @@ apt-get -ym -qq install ntpdate
 apt-get -ym -qq install ranger
 apt-get -ym -qq install feh
 apt-get -ym -qq install taskwarrior
+apt-get -ym -qq install autojump
 
 #virtual machine
 apt-get -ym -qq install virtualbox
