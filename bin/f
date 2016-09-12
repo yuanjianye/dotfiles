@@ -3,5 +3,5 @@ if [ "$*" == "" ];
 then
     openfile "$(find |percol)"
 else
-    openfile "$(find "$*"|percol)"
+    openfile "$(find $*|percol)"
 fi

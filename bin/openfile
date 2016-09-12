@@ -21,6 +21,7 @@ minordict = {
         "javascript":"vi",
         "x-xz":"vi",
         "xml":"vi",
+        "x-tar":"vi",
         "msword":"libreoffice",
         "msppt":"libreoffice",
         "vnd.ms-excel":"libreoffice",
