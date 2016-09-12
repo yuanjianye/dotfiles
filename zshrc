@@ -101,7 +101,7 @@ alias feh="feh -F -q -r --zoom max"
 alias fo="openfile"
 
 alias s='fanyi'
-alias d='cd $(dirs -v|sed "s/^[0-9]*[\t]*//g" |percol)'
+alias d='cd $(dirs -lp|percol)'
 alias -s rb=vi
 alias -s c=vi
 alias -s java=vi
