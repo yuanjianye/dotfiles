@@ -100,6 +100,7 @@ apt-get -ym -qq install lsof
 apt-get -ym -qq install ntpdate
 apt-get -ym -qq install ranger
 apt-get -ym -qq install feh
+apt-get -ym -qq install taskwarrior
 
 #virtual machine
 apt-get -ym -qq install virtualbox
@@ -121,6 +122,7 @@ fi
 
 pip -q install fanyi
 pip -q install percol
+pip -q install pinyin
 
 which cnpm >/dev/null 2>&1
 if [ "$?" == "0" ];
