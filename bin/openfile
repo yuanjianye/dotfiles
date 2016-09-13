@@ -22,6 +22,7 @@ minordict = {
         "x-chemdraw":"firefox",
         "pdf":"firefox",
         "epub":"firefox",
+        "json":"vi",
         "zip":"vi",
         "javascript":"vi",
         "x-xz":"vi",
