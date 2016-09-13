@@ -7,6 +7,11 @@ import subprocess
 
 opts, args = getopt.getopt(sys.argv[1:],"dh")
 
+priordict = {
+        "md":"firefox",
+        "htm":"firefox",
+        "html":"firefox"
+        }
 majordict = {
         "audio":"mplayer",
         "video":"mplayer",
@@ -46,7 +51,9 @@ for mfile in args:
 
     [major,minor] = filetype.split('/')
 
-    if majordict.has_key(major):
+    if priordict.has_key(mfile.split(".")[-1]):
+        openapp=priordict[mfile.split(".")[-1]]
+    elif majordict.has_key(major):
         openapp=majordict[major]
     elif minordict.has_key(minor):
         openapp=minordict[minor]
