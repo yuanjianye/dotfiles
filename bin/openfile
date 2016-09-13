@@ -29,6 +29,7 @@ minordict = {
         "x-debian-package":"dpkg -c",
         "x-rar":"unrar l",
         "rar":"unrar l",
+        "directory":"ranger",
         "vnd.rn-realmedia":"mplayer"
         }
 

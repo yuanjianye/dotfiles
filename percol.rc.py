@@ -8,6 +8,14 @@ percol.import_keymap({
     "K" : lambda percol: percol.command.select_previous(),
     "C-j" : lambda percol: percol.command.select_next(),
     "J" : lambda percol: percol.command.select_next(),
+    "C-h" : lambda percol: percol.command.select_next_page(),
+    "H" : lambda percol: percol.command.select_next_page(),
+    "C-l" : lambda percol: percol.command.select_previous_page(),
+    "L" : lambda percol: percol.command.select_previous_page(),
+    "C-d" : lambda percol: percol.command.delete_backward_word(),
+    "D" : lambda percol: percol.command.delete_backward_word(),
+    "C-c" : lambda percol: percol.cancel(),
+    "C" : lambda percol: percol.cancel(),
 })
 #percol.import_keymap({
     #"C-h" : lambda percol: percol.command.delete_backward_char(),
