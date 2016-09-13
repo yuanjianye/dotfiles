@@ -28,6 +28,7 @@ minordict = {
         "x-xz":"vi",
         "xml":"vi",
         "x-tar":"vi",
+        "gzip":"vi",
         "msword":"libreoffice",
         "msppt":"libreoffice",
         "vnd.ms-excel":"libreoffice",
@@ -40,6 +41,17 @@ minordict = {
         }
 
 for mfile in args:
+
+    while os.path.islink(mfile):
+        mtmp = os.readlink(mfile)
+        if mtmp[0] == '/':
+            mfile = mtmp
+        else:
+            mfile = os.path.dirname(mfile)+'/'+mtmp
+
+    if not os.path.exists(mfile):
+        continue
+
     filetype = mimetypes.guess_type(mfile)[0]
 
     if filetype is None:
