@@ -160,6 +160,11 @@ function f() {
         MPATH="$(find $*|grep -v '/.git/'|percol)"
     fi
 
+    if [ "$MPATH" = "" ];
+    then
+        return
+    fi
+
     if [ -d $MPATH ];
     then
         cd $MPATH
@@ -172,6 +177,11 @@ function m() {
     if [ "$*" != "" ];
     then
         MPATH="$(mlocate "$*"|percol)"
+    fi
+
+    if [ "$MPATH" = "" ];
+    then
+        return
     fi
 
     if [ -d $MPATH ];
