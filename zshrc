@@ -151,3 +151,33 @@ if exists percol; then
     zle -N percol_select_history
     bindkey '^R' percol_select_history
 fi
+
+function f() {
+    if [ "$*" = "" ];
+    then
+        MPATH="$(find|grep -v '/.git/'|percol)"
+    else
+        MPATH="$(find $*|grep -v '/.git/'|percol)"
+    fi
+
+    if [ -d $MPATH ];
+    then
+        cd $MPATH
+    else
+        openfile $MPATH
+    fi
+}
+
+function m() {
+    if [ "$*" != "" ];
+    then
+        MPATH="$(mlocate "$*"|percol)"
+    fi
+
+    if [ -d $MPATH ];
+    then
+        cd $MPATH
+    else
+        openfile $MPATH
+    fi
+}

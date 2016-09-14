@@ -1,7 +1,0 @@
-#!/bin/bash
-if [ "$*" == "" ];
-then
-    openfile "$(find|grep -v '/.git/'|percol)"
-else
-    openfile "$(find $*|grep -v '/.git/'|percol)"
-fi

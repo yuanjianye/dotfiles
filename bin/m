@@ -1,2 +1,0 @@
-openfile "$(mlocate "$*"|percol --match-method pinyin)"
-reset
