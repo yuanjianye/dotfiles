@@ -75,7 +75,7 @@ for mfile in args:
         exit(-1)
 
     lastpath = os.path.abspath(".")
-    os.chdir(os.path.dirname(mfile))
+    os.chdir(os.path.dirname(mfile) or '.')
     os.system(openapp + " " + '"' + os.path.basename(mfile) + '"')
     os.chdir(lastpath)
 
