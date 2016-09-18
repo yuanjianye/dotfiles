@@ -347,9 +347,10 @@ Bundle 'mattn/calendar-vim'
 " Markdown
 "-------------------------------------------------------------------------------------
 Bundle 'suan/vim-instant-markdown'
-Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 
+Bundle 'godlygeek/tabular'
+Bundle 'yuanjianye/autoload_cscope.vim'
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'
@@ -418,10 +419,6 @@ Bundle 'plasticboy/vim-markdown'
 "=====================================================================================
 if &diff != 0
     syntax off
-endif
-
-if expand('%') == "cscope.files"
-    cs add cscope.out
 endif
 
 function StarWM()
