@@ -1,0 +1,134 @@
+[org/gnome/terminal/legacy/profiles:/:133f7f0f-a036-4ffe-af37-00c4de833995]
+foreground-color='rgb(186,186,186)'
+rewrap-on-resize=true
+visible-name='tango'
+palette=['rgb(28,28,28)', 'rgb(204,0,0)', 'rgb(0,198,0)', 'rgb(196,160,0)', 'rgb(69,69,87)', 'rgb(211,54,130)', 'rgb(0,180,183)', 'rgb(186,186,186)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(115,210,22)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(186,49,192)', 'rgb(52,226,226)', 'rgb(211,215,207)']
+custom-command='zsh'
+cursor-shape='underline'
+use-custom-command=true
+use-theme-colors=false
+use-system-font=false
+update-records=false
+font='Menlo 11'
+allow-bold=false
+scrollback-unlimited=true
+bold-color-same-as-fg=true
+bold-color='rgb(136,138,133)'
+background-color='rgb(28,28,28)'
+audible-bell=false
+
+[org/gnome/terminal/legacy/profiles:]
+list=['133f7f0f-a036-4ffe-af37-00c4de833995']
+default='133f7f0f-a036-4ffe-af37-00c4de833995'
+
+
+[org/gnome/gedit/preferences/editor]
+highlight-current-line=false
+display-right-margin=true
+scheme='oblivion'
+tabs-size=uint32 4
+editor-font='Menlo 12'
+display-line-numbers=true
+insert-spaces=true
+wrap-mode='word'
+use-default-font=false
+wrap-last-split-mode='word'
+auto-indent=true
+
+[org/gnome/meld]
+indent-width=4
+highlight-current-line=true
+folder-shallow-comparison=false
+folder-status-filters=['new', 'modified']
+custom-editor-command='gvim'
+filename-filters=[('Backups', true, '#*# .#* ~* *~ *.{orig,bak,swp}'), ('OS-specific metadata', true, '.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db Desktop.ini'), ('Version Control', true, '_MTN .bzr .svn .svn .hg .fslckout _FOSSIL_ .fos CVS _darcs .git .svn'), ('Binaries', false, '*.{pyc,a,obj,o,so,la,lib,dll,exe}'), ('Media', false, '*.{jpg,gif,png,bmp,wav,mp3,ogg,flac,avi,mpg,xcf,xpm}')]
+show-line-numbers=true
+use-system-font=false
+window-state='normal'
+window-size=(1920, 1050)
+wrap-mode='word'
+highlight-syntax=false
+insert-spaces-instead-of-tabs=true
+draw-spaces=@as []
+use-system-editor=false
+folder-time-resolution=1
+custom-font='Menlo 8'
+toolbar-visible=false
+
+[org/mate/terminal/profiles/profile0]
+cursor-shape='underline'
+scroll-on-keystroke=true
+default-size-rows=24
+use-theme-colors=false
+custom-command='zsh'
+visible-name='Tango-Grey'
+use-custom-default-size=false
+login-shell=false
+background-image=''
+exit-action='close'
+backspace-binding='ascii-del'
+silent-bell=true
+foreground-color='#BABABABABABA'
+bold-color-same-as-fg=true
+use-system-font=false
+update-records=true
+background-type='solid'
+cursor-blink-mode='off'
+default-show-menubar=true
+scroll-background=true
+title-mode='replace'
+default-size-columns=80
+palette='#1C1C1C1C1C1C:#CCCC00000000:#0000C6C60000:#C4C4A0A00000:#454545455757:#D3D336368282:#0000B4B4B7B7:#BABABABABABA:#555557575353:#EFEF29292929:#7373D2D21616:#FCFCE9E94F4F:#72729F9FCFCF:#BABA3131C0C0:#3434E2E2E2E2:#D3D3D7D7CFCF'
+allow-bold=false
+title='Terminal'
+background-color='#1C1C1C1C1C1C'
+font='Menlo 11'
+delete-binding='escape-sequence'
+scrollback-unlimited=true
+background-darkness=0.5
+scroll-on-output=false
+use-custom-command=true
+bold-color='#000000000000'
+word-chars='-A-Za-z0-9,./?%&#:_=+@~'
+scrollback-lines=512
+use-skey=true
+
+[org/mate/terminal/global]
+default-profile='profile0'
+profile-list=['profile0']
+use-menu-accelerators=false
+use-mnemonics=false
+
+
+[org/mate/desktop/font-rendering]
+rgba-order='vrgb'
+antialiasing='rgba'
+dpi=128.0
+hinting='none'
+
+[org/mate/desktop/interface]
+font-name='Noto Sans CJK SC 11'
+document-font-name='Noto Sans CJK SC 11'
+cursor-blink-time=747
+gtk-color-scheme='fg_color:#000000000000\nbg_color:#eaeaeaeaeaea\ntext_color:#000000000000\nbase_color:#ffffffffffff\nselected_fg_color:#ffffffffffff\nselected_bg_color:#3f1d807c9199\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f5f5f5f5b5b5'
+icon-theme='menta'
+gtk-theme='TraditionalOk'
+monospace-font-name='Menlo 11'
+
+[org/mate/pluma]
+display-right-margin=true
+color-scheme='oblivion'
+display-line-numbers=true
+insert-spaces=true
+use-default-font=true
+toolbar-visible=false
+auto-indent=true
+statusbar-visible=false
+
+[org/mate/marco/general]
+theme='TraditionalOk'
+titlebar-font='Noto Sans CJK SC 11'
+
+[org/mate/caja/desktop]
+font='Noto Sans CJK SC 11'
+
