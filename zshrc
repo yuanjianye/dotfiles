@@ -103,6 +103,7 @@ alias fo="openfile"
 alias s='fanyi'
 alias d='cd $(dirs -lp|percol)'
 alias t='task'
+alias g='googler -n7'
 
 alias -s rb=vi
 alias -s c=vi

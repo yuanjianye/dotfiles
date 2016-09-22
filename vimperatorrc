@@ -45,6 +45,7 @@ command baidu   tabopen https://www.baidu.com
 command news    tabopen https://news.sina.com.cn
 command wiki    tabopen https://github.com/yuanjianye/notes/wiki/blog
 command epk     tabopen http://music.163.com/#/djradio?id=735001
+command music   tabopen http://music.163.com
 command npr     tabopen http://music.163.com/#/djradio?id=337450056
 command app     set apptab=true
 
