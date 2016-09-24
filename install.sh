@@ -40,6 +40,9 @@ mkdir -p $HOME/.config/fcitx/conf
 mkdir -p $HOME/.config/fcitx/skin/classic
 mkdir -p $HOME/.mplayer
 
+mkdir -p $HOME/.percol.d
+mkdir -p $HOME/.config/ranger
+
 #install menlo font
 if [ ! -f /usr/share/fonts/truetype/Menlo-Regular.ttf ];
 then
