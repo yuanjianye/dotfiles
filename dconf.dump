@@ -56,7 +56,7 @@ scrollbar-policy='never'
 foreground-color='rgb(204,204,204)'
 rewrap-on-resize=true
 visible-name='visibone'
-palette=['rgb(26,26,26)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(51,104,153)', 'rgb(153,102,204)', 'rgb(102,204,204)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,255)', 'rgb(255,255,255)']
+palette=['rgb(26,26,26)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(51,77,104)', 'rgb(153,102,204)', 'rgb(102,204,204)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,255)', 'rgb(255,255,255)']
 custom-command='tmuxa.sh'
 cursor-shape='underline'
 use-custom-command=true
@@ -113,6 +113,10 @@ use-system-editor=false
 folder-time-resolution=1
 custom-font='Menlo 8'
 toolbar-visible=false
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0)
+custom-colors=[(0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0)]
 
 [org/mate/desktop/peripherals/keyboard]
 rate=72

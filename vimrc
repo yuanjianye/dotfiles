@@ -183,7 +183,7 @@ set hid                                         " allow to change buffer without
 "set backspace=2                                " make backspace work normal
 set backspace=eol,start,indent                  " Configure backspace so it acts as it should act
 "set whichwrap+=<,>,h,l                         " allow backspace and cursor keys to wrap
-set mouse=a                                     " use mouse in all modes
+"set mouse=a                                     " use mouse in all modes
 set shortmess=atI                               " shorten messages to avoid 'press a key' prompt
 set report=0                                    " tell us when anything is changed via :...
 set fillchars=vert:\ ,stl:\ ,stlnc:\
