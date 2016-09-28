@@ -81,4 +81,4 @@ do
 done
 
 update-rc.d i3_desktop defaults
-echo ":BundleInstall"|vim 2>/dev/null
+vim +BundleInstall +qall

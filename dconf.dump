@@ -56,7 +56,7 @@ scrollbar-policy='never'
 foreground-color='rgb(204,204,204)'
 rewrap-on-resize=true
 visible-name='visibone'
-palette=['rgb(51,51,51)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(102,153,204)', 'rgb(153,102,204)', 'rgb(102,204,153)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,204)', 'rgb(255,255,255)']
+palette=['rgb(26,26,26)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(51,104,153)', 'rgb(153,102,204)', 'rgb(102,204,204)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,255)', 'rgb(255,255,255)']
 custom-command='tmuxa.sh'
 cursor-shape='underline'
 use-custom-command=true
@@ -68,13 +68,13 @@ allow-bold=false
 scrollback-unlimited=true
 bold-color-same-as-fg=true
 bold-color='rgb(153,153,153)'
-background-color='rgb(51,51,51)'
+background-color='rgb(26,26,26)'
 audible-bell=false
 scrollbar-policy='never'
 
 [org/gnome/terminal/legacy/profiles:]
 list=['133f7f0f-a036-4ffe-af37-00c4de833995','e425299c-6eb5-4304-8156-ee6e3118b2ef']
-default='133f7f0f-a036-4ffe-af37-00c4de833995'
+default='e425299c-6eb5-4304-8156-ee6e3118b2ef'
 
 
 [org/gnome/gedit/preferences/editor]
