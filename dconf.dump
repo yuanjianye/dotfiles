@@ -52,8 +52,28 @@ background-color='rgb(28,28,28)'
 audible-bell=false
 scrollbar-policy='never'
 
+[org/gnome/terminal/legacy/profiles:/:e425299c-6eb5-4304-8156-ee6e3118b2ef]
+foreground-color='rgb(204,204,204)'
+rewrap-on-resize=true
+visible-name='visibone'
+palette=['rgb(51,51,51)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(102,153,204)', 'rgb(153,102,204)', 'rgb(102,204,153)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,204)', 'rgb(255,255,255)']
+custom-command='tmuxa.sh'
+cursor-shape='underline'
+use-custom-command=true
+use-theme-colors=false
+use-system-font=false
+update-records=false
+font='Menlo 11'
+allow-bold=false
+scrollback-unlimited=true
+bold-color-same-as-fg=true
+bold-color='rgb(153,153,153)'
+background-color='rgb(51,51,51)'
+audible-bell=false
+scrollbar-policy='never'
+
 [org/gnome/terminal/legacy/profiles:]
-list=['133f7f0f-a036-4ffe-af37-00c4de833995']
+list=['133f7f0f-a036-4ffe-af37-00c4de833995','e425299c-6eb5-4304-8156-ee6e3118b2ef']
 default='133f7f0f-a036-4ffe-af37-00c4de833995'
 
 
@@ -104,7 +124,7 @@ options=['caps\tcaps:super']
 
 [org/mate/desktop/peripherals/mouse]
 cursor-size=18
-cursor-theme='default'
+cursor-theme='mate'
 
 [org/mate/terminal/profiles/profile2]
 scrollbar-position='hidden'
@@ -242,7 +262,7 @@ document-font-name='Noto Sans CJK SC 11'
 cursor-blink-time=747
 gtk-color-scheme='fg_color:#000000000000\nbg_color:#eaeaeaeaeaea\ntext_color:#000000000000\nbase_color:#ffffffffffff\nselected_fg_color:#ffffffffffff\nselected_bg_color:#3f1d807c9199\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f5f5f5f5b5b5'
 icon-theme='menta'
-gtk-theme='TraditionalOk'
+gtk-theme='BlueMenta'
 monospace-font-name='Menlo 11'
 
 [org/mate/pluma]
@@ -256,7 +276,7 @@ auto-indent=true
 statusbar-visible=false
 
 [org/mate/marco/general]
-theme='TraditionalOk'
+theme='BlueMenta'
 titlebar-font='Noto Sans CJK SC 11'
 
 [org/mate/caja/desktop]
