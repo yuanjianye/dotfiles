@@ -192,3 +192,20 @@ function m() {
         openfile $MPATH
     fi
 }
+
+function a() {
+    if [ "$*" != "" ];
+    then
+        MGREP="$(ack-grep --smart-case "$*"|percol)"
+    else
+        return
+    fi
+
+    if [ "$MGREP" = "" ];
+    then
+        return
+    fi
+
+    vim $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
+
+}
