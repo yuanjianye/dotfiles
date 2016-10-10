@@ -2,7 +2,7 @@
 tmux list-sessions 
 if [ "$?" == "0" ];
 then
-    exec tmux a
+    exec tmux -2 a
 else
-    exec tmux
+    exec tmux -2
 fi
