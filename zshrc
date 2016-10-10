@@ -196,7 +196,7 @@ function m() {
 function a() {
     if [ "$*" != "" ];
     then
-        MGREP="$(ack-grep --smart-case "$*"|percol)"
+        MGREP="$(ack-grep --smart-case $*|percol)"
     else
         return
     fi
@@ -206,6 +206,6 @@ function a() {
         return
     fi
 
-    vim $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
+    vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
 
 }
