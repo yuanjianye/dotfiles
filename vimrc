@@ -37,6 +37,10 @@ hi NonText      gui=NONE    guibg=grey8
 hi StatusLine   gui=NONE    guifg=grey8
 hi StatusLineNC gui=NONE    guifg=grey8
 
+"set cursorline
+hi CursorLine  cterm=NONE   ctermbg=DarkBlue
+"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
+
 "=====================================================================================
 " encoding
 "=====================================================================================
@@ -161,6 +165,7 @@ set autoread                                    " auto readfile while file chang
 set ignorecase                                  " ignorecase when searchin
 set smartcase                                   " when searching try to be smart about cases
 set magic                                       " for regular expressions turn magic on
+set t_Co=256                                    " 256 color support
 
 " path/backup
 "-------------------------------------------------------------------------------------
