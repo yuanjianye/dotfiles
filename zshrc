@@ -100,7 +100,6 @@ alias ack="ack-grep --smart-case"
 alias feh="feh -F -q -r --zoom max"
 alias fo="openfile"
 
-alias s='fanyi'
 alias d='cd $(dirs -lp|percol)'
 alias t='task'
 alias g='googler -n7'

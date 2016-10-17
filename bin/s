@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+import os
+
+from fanyi.__main__ import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    ret = main()
+    if (ret is None):
+        word_file = open(os.getenv("HOME")+'/'+'.words',mode='r+')
+        word_list = word_file.readlines()
+        if (len(sys.argv) == 2 ) and ( sys.argv[1] not in word_list ):
+            word_file.write(sys.argv[1]+'\n')
+        word_file.close()
+    sys.exit(ret)
