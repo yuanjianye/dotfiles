@@ -171,6 +171,7 @@ function f() {
     else
         openfile $MPATH
     fi
+    echo $MPATH
 }
 
 function m() {
@@ -190,6 +191,7 @@ function m() {
     else
         openfile $MPATH
     fi
+    echo $MPATH
 }
 
 function a() {
