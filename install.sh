@@ -48,9 +48,19 @@ if [ ! -f /usr/share/fonts/truetype/Menlo-Regular.ttf ];
 then
     tar xf $PWD/Menlo.tar.xz -C /usr/share/fonts/truetype
 fi
+if [ ! -f /usr/share/fonts/truetype/monaco.ttf ];
+then
+    tar xf $PWD/Monaco.tar.xz -C /usr/share/fonts/truetype
+fi
+
 ls -l --color /usr/share/fonts/truetype/Menlo-Regular.ttf
+ls -l --color /usr/share/fonts/truetype/monaco.ttf
+
 fc-list|grep Menlo >/dev/null
-if [ "$?" != 0 ];
+MENLO_INSTALLED=$?
+fc-list|grep monaco  >/dev/null
+MONACO_INSTALLED=$?
+if [ "$MENLO_INSTALLED" != 0 ] || [ "$MONACO_INSTALLED" != 0 ];
 then
     fc-cache
 fi
