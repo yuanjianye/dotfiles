@@ -1,0 +1,17 @@
+[$Version]
+update_info=kded.upd:kde3.0,kdeui.upd:kde4/migrate_from_kde3_icon_theme
+
+[General]
+XftAntialias=true
+XftHintStyle=hintnone
+XftSubPixel=vrgb
+desktopFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+fixed=Menlo,10,-1,5,50,0,0,0,0,0
+font=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+menuFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+taskbarFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+toolBarFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+
+[WM]
+activeFont=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0

@@ -30,6 +30,7 @@ MYDOT_FILES="
     fcitx/fcitx_skin.conf   $HOME/.config/fcitx/skin/classic/fcitx_skin.conf
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
     percol.rc.py            $HOME/.percol.d/rc.py
+    kdeglobals              $HOME/.kde/share/config/kdeglobals
 "
 #create directory
 mkdir -p $HOME/.i3
