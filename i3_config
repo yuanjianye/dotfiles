@@ -2,7 +2,7 @@ set $mod Mod1
 
 new_window none
 
-font xft:Droid Sans Fallback Regular 14
+font xft:monaco 15
 
 floating_modifier $mod
 
