@@ -125,6 +125,7 @@ fi
 pip -q install fanyi
 pip -q install percol
 pip -q install pinyin
+pip -q install ptpython
 
 which cnpm >/dev/null 2>&1
 if [ "$?" == "0" ];
