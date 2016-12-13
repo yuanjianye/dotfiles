@@ -31,6 +31,9 @@ MYDOT_FILES="
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
     percol.rc.py            $HOME/.percol.d/rc.py
     kdeglobals              $HOME/.kde/share/config/kdeglobals
+    moc_config              $HOME/.moc/config
+    moc_keymap              $HOME/.moc/keymap
+    ptpython_config.py      $HOME/.ptpython/config.py
 "
 #create directory
 mkdir -p $HOME/.i3
@@ -43,6 +46,9 @@ mkdir -p $HOME/.mplayer
 
 mkdir -p $HOME/.percol.d
 mkdir -p $HOME/.config/ranger
+
+mkdir -p $HOME/.moc
+mkdir -p $HOME/.ptpython
 
 #install menlo font
 if [ ! -f /usr/share/fonts/truetype/Menlo-Regular.ttf ];
