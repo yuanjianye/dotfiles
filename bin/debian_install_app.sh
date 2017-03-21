@@ -30,6 +30,8 @@ apt-get -ym -qq install texinfo
 apt-get -ym -qq install gcc-multilib 
 apt-get -ym -qq install g++-multilib
 apt-get -ym -qq install u-boot-tools
+apt-get -ym -qq install lzop
+apt-get -ym -qq install lib32z1-dev
 
 apt-get -ym -qq install android-tools-adb
 apt-get -ym -qq install aapt
