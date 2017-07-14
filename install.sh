@@ -51,6 +51,7 @@ mkdir -p $HOME/.moc
 mkdir -p $HOME/.ptpython
 
 #install menlo font
+mkdir -p /usr/share/fonts/truetype
 if [ ! -f /usr/share/fonts/truetype/Menlo-Regular.ttf ];
 then
     tar xf $PWD/Menlo.tar.xz -C /usr/share/fonts/truetype
