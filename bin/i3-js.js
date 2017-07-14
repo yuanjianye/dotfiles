@@ -1,4 +1,4 @@
-#!/usr/bin/nodejs
+#!/usr/bin/env node
 var child_process = require("child_process");
 child_process.exec("i3-msg -t get_tree",function(err,stdout,stderr){
         var dataobj = JSON.parse(stdout);
