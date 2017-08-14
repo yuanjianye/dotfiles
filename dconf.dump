@@ -55,7 +55,7 @@ scrollbar-policy='never'
 [org/gnome/terminal/legacy/profiles:/:e425299c-6eb5-4304-8156-ee6e3118b2ef]
 foreground-color='rgb(204,204,204)'
 rewrap-on-resize=true
-visible-name='visibone'
+visible-name='yuanjianye'
 palette=['rgb(26,26,26)', 'rgb(204,102,153)', 'rgb(153,204,102)', 'rgb(204,153,102)', 'rgb(51,77,104)', 'rgb(153,102,204)', 'rgb(102,204,204)', 'rgb(204,204,204)', 'rgb(153,153,153)', 'rgb(255,153,204)', 'rgb(204,255,153)', 'rgb(255,204,153)', 'rgb(153,204,255)', 'rgb(204,153,255)', 'rgb(153,255,255)', 'rgb(255,255,255)']
 custom-command='tmuxa.sh'
 cursor-shape='underline'
@@ -63,7 +63,7 @@ use-custom-command=true
 use-theme-colors=false
 use-system-font=false
 update-records=false
-font='monaco 11'
+font='monaco 15'
 allow-bold=false
 scrollback-unlimited=true
 bold-color-same-as-fg=true
