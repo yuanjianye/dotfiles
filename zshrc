@@ -56,13 +56,8 @@ plugins=(autojump adb)
 # User configuration
 
 #standard path
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
-#jdk path
-export PATH="/usr/local/java/jdk1.6.0_35/bin:$PATH"
-#hisi path
-export PATH="$PATH:/opt/hisi-linux/x86-arm/arm-hisiv200-linux/target/bin"
-#ndk path
-export PATH="$PATH:/home/android/ndk/ndk-arm-android-9-r8b-toolchain/bin"
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+
 #amlogic path
 export PATH="$PATH:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
 
@@ -98,7 +93,6 @@ alias ps='ps -aux'
 alias vi='vim'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
-alias ack="ack-grep --smart-case"
 alias feh="feh -F -q -r --zoom max"
 alias fo="openfile"
 
@@ -132,7 +126,6 @@ alias -s pdf='firefox'
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
-export JAVA_HOME="/usr/local/java/jdk1.6.0_35"
 
 if [ "$DISPLAY" = "" ];
 then
@@ -179,7 +172,7 @@ function f() {
 function m() {
     if [ "$*" != "" ];
     then
-        MPATH="$(mlocate "$*"|percol)"
+        MPATH="$(locate "$*"|percol)"
     fi
 
     if [ "$MPATH" = "" ];
@@ -199,7 +192,7 @@ function m() {
 function a() {
     if [ "$*" != "" ];
     then
-        MGREP="$(ack-grep --smart-case $*|percol)"
+        MGREP="$(ack $*|percol)"
     else
         return
     fi

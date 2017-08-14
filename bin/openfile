@@ -68,11 +68,11 @@ for mfile in args:
 
     [major,minor] = filetype.split('/')
 
-    if priordict.has_key(mfile.split(".")[-1]):
+    if mfile.split(".")[-1] in priordict:
         openapp=priordict[mfile.split(".")[-1]]
-    elif majordict.has_key(major):
+    elif major in majordict:
         openapp=majordict[major]
-    elif minordict.has_key(minor):
+    elif minor in minordict:
         openapp=minordict[minor]
     else:
         print("Can not find app to open " + mfile + "\n" + "type: " + filetype)

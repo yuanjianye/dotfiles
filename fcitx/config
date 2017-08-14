@@ -41,7 +41,7 @@ InactivateKey=CTRL_F10
 # 输入法间切换时包含未激活状态
 # Available Value:
 # True False
-#IMSwitchIncludeInactive=False
+IMSwitchIncludeInactive=True
 # 输入法切换键
 # Available Value:
 # CTRL_SHIFT
@@ -105,7 +105,7 @@ ShareStateAmongWindow=All
 # True False
 SendTextWhenSwitchEng=False
 # 候选词个数
-CandidateWordNumber=9
+CandidateWordNumber=6
 # 提示词库中词组
 # Available Value:
 # True False
@@ -144,4 +144,6 @@ CandidateWordNumber=9
 # Available Value:
 # True False
 #HideInputWindowWhenOnlyOneCandidate=False
+
+
 

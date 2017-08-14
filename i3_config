@@ -2,7 +2,7 @@ set $mod Mod1
 
 new_window none
 
-font xft:monaco 15
+font xft:Noto Sans CJK SC DemiLight 15
 
 floating_modifier $mod
 

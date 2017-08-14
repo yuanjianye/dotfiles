@@ -63,7 +63,7 @@ use-custom-command=true
 use-theme-colors=false
 use-system-font=false
 update-records=false
-font='monaco 10'
+font='monaco 11'
 allow-bold=false
 scrollback-unlimited=true
 bold-color-same-as-fg=true
@@ -73,9 +73,8 @@ audible-bell=false
 scrollbar-policy='never'
 
 [org/gnome/terminal/legacy/profiles:]
-list=['133f7f0f-a036-4ffe-af37-00c4de833995','e425299c-6eb5-4304-8156-ee6e3118b2ef']
+list=['133f7f0f-a036-4ffe-af37-00c4de833995', 'e425299c-6eb5-4304-8156-ee6e3118b2ef']
 default='e425299c-6eb5-4304-8156-ee6e3118b2ef'
-
 
 [org/gnome/gedit/preferences/editor]
 highlight-current-line=false
@@ -100,42 +99,66 @@ highlight-current-line=true
 folder-shallow-comparison=false
 folder-status-filters=['new', 'modified']
 custom-editor-command='gvim'
+style-scheme='tango'
 filename-filters=[('Backups', true, '#*# .#* ~* *~ *.{orig,bak,swp}'), ('OS-specific metadata', true, '.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db Desktop.ini'), ('Version Control', true, '_MTN .bzr .svn .svn .hg .fslckout _FOSSIL_ .fos CVS _darcs .git .svn'), ('Binaries', false, '*.{pyc,a,obj,o,so,la,lib,dll,exe}'), ('Media', false, '*.{jpg,gif,png,bmp,wav,mp3,ogg,flac,avi,mpg,xcf,xpm}')]
 show-line-numbers=true
 use-system-font=false
 window-state='normal'
-window-size=(1920, 1050)
+window-size=(1920, 1044)
 wrap-mode='word'
 highlight-syntax=false
 insert-spaces-instead-of-tabs=true
 draw-spaces=@as []
 use-system-editor=false
 folder-time-resolution=1
-custom-font='monaco 8'
+custom-font='Noto Mono 12'
 toolbar-visible=false
+vc-status-filters=['flatten', 'modified']
+
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=165
+window-position=(197, -35)
+show-size-column=true
+show-hidden=false
+window-size=(1523, 1184)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
 
 [org/gtk/settings/color-chooser]
 selected-color=(true, 0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0)
 custom-colors=[(0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0)]
 
-[org/mate/desktop/peripherals/keyboard]
-rate=72
-delay=368
-numlock-state='off'
+[org/mate/pluma]
+use-default-font=false
+color-scheme='solarized-dark'
+active-plugins=['time', 'docinfo', 'filebrowser', 'modelines', 'spell']
+statusbar-visible=true
+editor-font='Monaco 16'
 
-[org/mate/desktop/peripherals/keyboard/kbd]
-options=['caps\tcaps:super']
+[org/mate/pluma/plugins/filebrowser/on-load]
+virtual-root='file:///tmp'
+tree-view=true
+root='file:///'
 
-[org/mate/desktop/peripherals/mouse]
-cursor-size=18
-cursor-theme='mate'
+[org/mate/caja/window-state]
+start-with-sidebar=true
+geometry='1920x1044+0+36'
+start-with-status-bar=true
+maximized=false
+start-with-toolbar=true
 
 [org/mate/caja/desktop]
-font='Noto Sans CJK SC 11'
+font='Noto Sans CJK SC Semi-Light 14'
 
 [org/mate/marco/general]
-theme='TraditionalOk'
-titlebar-font='Noto Sans CJK SC 11'
+theme='Blue-Submarine'
+titlebar-font='Noto Sans CJK SC Semi-Light 14'
+
+[org/mate/terminal/keybindings]
+zoom-in='<Primary>equal'
 
 [org/mate/terminal/profiles/profile2]
 scrollbar-position='hidden'
@@ -222,7 +245,7 @@ scroll-on-keystroke=true
 default-size-rows=24
 use-theme-colors=false
 custom-command='tmuxa.sh'
-visible-name='Tango-Grey'
+visible-name='yuan'
 use-custom-default-size=false
 login-shell=false
 background-image=''
@@ -243,7 +266,7 @@ palette='#1C1C1C1C1C1C:#CCCC00000000:#0000C6C60000:#C4C4A0A00000:#454545455757:#
 allow-bold=false
 title='Terminal'
 background-color='#1C1C1C1C1C1C'
-font='monaco 11'
+font='Monaco 12'
 delete-binding='escape-sequence'
 scrollback-unlimited=true
 background-darkness=0.5
@@ -260,24 +283,57 @@ profile-list=['profile0', 'profile1', 'profile2']
 use-menu-accelerators=false
 use-mnemonics=false
 
+[org/mate/desktop/peripherals/keyboard]
+rate=72
+delay=368
+numlock-state='off'
+
+[org/mate/desktop/peripherals/keyboard/kbd]
+options=['caps\tcaps:super']
+
+[org/mate/desktop/peripherals/mouse]
+cursor-size=18
+cursor-theme='mate'
+
+[org/mate/desktop/accessibility/keyboard]
+slowkeys-beep-press=true
+mousekeys-accel-time=1200
+bouncekeys-beep-reject=true
+slowkeys-beep-reject=false
+togglekeys-enable=false
+enable=false
+bouncekeys-enable=false
+stickykeys-enable=false
+feature-state-change-beep=false
+slowkeys-beep-accept=true
+bouncekeys-delay=300
+mousekeys-max-speed=750
+mousekeys-enable=false
+timeout-enable=false
+slowkeys-delay=300
+stickykeys-modifier-beep=true
+stickykeys-two-key-off=true
+mousekeys-init-delay=160
+timeout=120
+slowkeys-enable=false
+
 [org/mate/desktop/background]
 color-shading-type='solid'
-primary-color='#000044445555'
+primary-color='rgb(0,68,85)'
 picture-options='wallpaper'
 picture-filename=''
-secondary-color='#62627f7f5a5a'
+secondary-color='rgb(98,127,90)'
 
 [org/mate/desktop/font-rendering]
 rgba-order='vrgb'
 antialiasing='grayscale'
-dpi=128.0
+dpi=96.0
 hinting='none'
 
 [org/mate/desktop/interface]
-font-name='Noto Sans CJK SC 11'
-document-font-name='Noto Sans CJK SC 11'
+font-name='Noto Sans CJK SC Semi-Light 14'
+document-font-name='Noto Sans CJK SC Semi-Light 14'
 cursor-blink-time=747
-gtk-color-scheme='fg_color:#000000000000\nbg_color:#eaeaeaeaeaea\ntext_color:#000000000000\nbase_color:#ffffffffffff\nselected_fg_color:#ffffffffffff\nselected_bg_color:#3f1d807c9199\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f5f5f5f5b5b5'
-icon-theme='menta'
-gtk-theme='TraditionalOk'
-monospace-font-name='monaco 11'
+icon-theme='mate'
+gtk-theme='Blue-Submarine'
+monospace-font-name='Noto Sans Mono CJK SC 14'
