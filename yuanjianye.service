@@ -1,0 +1,11 @@
+[Unit]
+Description=YuanJianYe's script
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/i3.sh
+RemainAfterExit=yes
+After=systemd
+
+[Install]
+WantedBy=multi-user.target 

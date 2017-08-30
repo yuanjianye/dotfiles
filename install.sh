@@ -11,9 +11,11 @@ cd `dirname $SCRIPT_FILE`
 MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     smb.conf                /etc/samba/smb.conf
-    w3m_config              /etc/w3m/config
     fonts_local.conf        /etc/fonts/local.conf
     i3_desktop              /etc/init.d/i3_desktop
+    yuanjianye.service      /etc/systemd/system/yuanjianye.service
+    synergy-yuan.conf       $HOME/.synergy.conf
+    w3m_config              $HOME/.w3m/config
     vimrc                   $HOME/.vimrc
     fbtermrc                $HOME/.fbtermrc
     gitconfig               $HOME/.gitconfig
@@ -89,6 +91,7 @@ done
 mv $HOME/.config/dconf/user $HOME/.config/dconf/user.bak
 dconf load / <./dconf.dump
 ls -l --color $HOME/.config/dconf/user
+xrdb -merge ./xterm.Xresources
 
 #install script files
 cd ./bin

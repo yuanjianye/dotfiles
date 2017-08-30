@@ -95,6 +95,7 @@ alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias feh="feh -F -q -r --zoom max"
 alias fo="openfile"
+alias chrome="su yuanjianye -c chromium"
 
 alias d='cd $(dirs -lp|percol)'
 alias t='task'

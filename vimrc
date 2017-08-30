@@ -356,6 +356,7 @@ Bundle 'plasticboy/vim-markdown'
 
 Bundle 'godlygeek/tabular'
 Bundle 'yuanjianye/autoload_cscope.vim'
+Bundle 'posva/vim-vue'
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'

@@ -22,8 +22,11 @@ sleep 1
 i3 &
 /usr/lib/mate-settings-daemon/mate-settings-daemon &
 pulseaudio --start
-synergyc 172.16.55.220
+synergys
 fcitx &
 rmmod pcspkr
 sleep 1
-i3-msg "exec --no-startup-id mate-terminal"
+/usr/bin/feh --bg-scale $HOME/Pictures/wallpaper/wallpaper.jpg
+i3-msg "exec --no-startup-id firefox"
+i3-msg "exec --no-startup-id xterm tmux-single"
+i3-msg layout tabbed
