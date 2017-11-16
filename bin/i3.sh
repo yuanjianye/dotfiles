@@ -26,7 +26,7 @@ synergys
 fcitx &
 rmmod pcspkr
 sleep 1
-/usr/bin/feh --bg-scale $HOME/Pictures/wallpaper/wallpaper.jpg
+#/usr/bin/feh --bg-scale $HOME/Pictures/wallpaper/wallpaper.jpg
 i3-msg "exec --no-startup-id firefox"
 i3-msg "exec --no-startup-id xterm tmux-single"
 i3-msg layout tabbed

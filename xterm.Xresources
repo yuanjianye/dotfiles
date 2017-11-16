@@ -28,3 +28,8 @@ xterm*color12: #99CCFF
 xterm*color13: #CC99FF
 xterm*color14: #99FFFF
 xterm*color15: #FFFFFF
+XTerm*inputMethod:fcitx
+XTerm*VT100.Translations: #override \n\
+Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+<BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+Ctrl <KeyPress> P: print() \n
