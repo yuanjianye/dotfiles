@@ -1,3 +1,0 @@
-#!/bin/bash
-tmux show-buffer | xclip -sel clip -i
-tmux set-buffer "$(xclip -o)"

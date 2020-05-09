@@ -36,15 +36,10 @@ apt-get -ym -qq install lib32z1-dev
 apt-get -ym -qq install android-tools-adb
 apt-get -ym -qq install aapt
 
-#jdk
-apt-get -ym -qq install openjdk-7-jdk
-
 #net server
 apt-get -ym -qq install samba 
 apt-get -ym -qq install vsftpd 
 apt-get -ym -qq install openssh-server 
-apt-get -ym -qq install apache2
-apt-get -ym -qq install mysql-server
 
 #net tools
 apt-get -ym -qq install openvpn 
@@ -58,25 +53,16 @@ apt-get -ym -qq install sshfs
 apt-get -ym -qq install tcpdump
 apt-get -ym -qq install aria2
 apt-get -ym -qq install cifs-utils
-apt-get -ym -qq install pptp-linux
 
 #gui tools
-apt-get -ym -qq install terminator
-apt-get -ym -qq install gnome-terminal
 apt-get -ym -qq install meld 
-apt-get -ym -qq install claws-mail 
 apt-get -ym -qq install firefox
-apt-get -ym -qq install iceweasel
 
 #desktop
-apt-get -ym -qq install xserver-xorg
-apt-get -ym -qq install mate-desktop-environment-extras 
+apt-get -ym -qq install lxappearance
+apt-get -ym -qq install lxde-common
 apt-get -ym -qq install fcitx 
-apt-get -ym -qq install pulseaudio 
-apt-get -ym -qq install alsa-utils  
-apt-get -ym -qq install xdotool 
 apt-get -ym -qq install xclip 
-apt-get -ym -qq install dconf-cli
 
 #python
 apt-get -ym -qq install python-pip 
@@ -92,22 +78,17 @@ apt-get -ym -qq install astyle
 apt-get -ym -qq install npm
 
 #other
-apt-get -ym -qq install pidgin 
 apt-get -ym -qq install sdcv 
 apt-get -ym -qq install glances 
 apt-get -ym -qq install ncdu 
-apt-get -ym -qq install fonts-droid
 apt-get -ym -qq install fonts-noto-cjk
 apt-get -ym -qq install unrar
 apt-get -ym -qq install lsof
 apt-get -ym -qq install ntpdate
 apt-get -ym -qq install ranger
-apt-get -ym -qq install feh
-apt-get -ym -qq install taskwarrior
 apt-get -ym -qq install autojump
-
-#virtual machine
-apt-get -ym -qq install virtualbox
+apt-get -ym -qq install mplayer
+apt-get -ym -qq install percol
 
 #vim vundle
 mkdir -p $HOME/.vim/bundle
@@ -115,22 +96,3 @@ git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
 
 #oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
-
-#sougou input
-if [ ! -d /usr/share/fcitx/sogou ] && [ ! -d /usr/share/fcitx-sogoupinyin ];
-then
-    wget "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64" -O "/tmp/sougou_64.deb"
-    dpkg -i /tmp/sougou_64.deb
-    apt-get -f install
-fi
-
-pip -q install fanyi
-pip -q install percol
-pip -q install pinyin
-pip -q install ptpython
-
-which cnpm >/dev/null 2>&1
-if [ "$?" == "0" ];
-then
-    cnpm -g install instant-markdown-d
-fi

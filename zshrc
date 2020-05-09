@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/root/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,10 +58,7 @@ plugins=(autojump adb)
 #standard path
 #export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 
-#amlogic path
-export PATH="$PATH:/opt/gnutools/arc2.3-p0/elf32-4.2.1/bin:/opt/gnutools/arc2.3-p0/uclibc-4.2.1/bin:/opt/gnutools/arc-4.8-amlogic-20130904-r2/bin:/opt/gcc-linaro-arm-linux-gnueabihf/bin:/opt/CodeSourcery/Sourcery_G++_Lite/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-eabi/bin:/opt/CodeSourcery/Sourcery_G++_Lite/arm-none-linux-gnueabi/bin:/opt/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux/bin:/opt/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin"
-
-export USER="root"
+#export USER="root"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -91,15 +88,10 @@ alias ll='ls -l'
 alias la='ls -a'
 alias ps='ps -aux'
 alias vi='vim'
-alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
-alias feh="feh -F -q -r --zoom max"
 alias fo="openfile"
-alias chrome="su yuanjianye -c chromium"
 
 alias d='cd $(dirs -lp|percol)'
-alias t='task'
-alias g='googler -n7'
 
 alias -s rb=vi
 alias -s c=vi
@@ -115,22 +107,18 @@ alias -s conf=vi
 
 alias -s html=firefox
 alias -s md=firefox
-alias -s chm=firefox
-alias -s epub=firefox
-alias -s pdf=firefox
 
-alias -s gz='tar -xzvf'
-alias -s tgz='tar -xzvf'
+alias -s gz='tar -xvf'
+alias -s tgz='tar -xvf'
 alias -s zip='unzip'
-alias -s bz2='tar -xjvf'
-alias -s pdf='firefox'
+alias -s bz2='tar -xvf'
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
 
 if [ "$DISPLAY" = "" ];
 then
-    export DISPLAY=":1"
+    export DISPLAY=":0"
 fi
 
 function exists { which $1 &> /dev/null }

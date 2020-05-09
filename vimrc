@@ -321,7 +321,7 @@ Bundle 'SearchComplete'
 
 " InputMethod
 "-------------------------------------------------------------------------------------
-Bundle 'vimim'
+"Bundle 'vimim'
 
 " Encoding
 "-------------------------------------------------------------------------------------
@@ -336,27 +336,27 @@ Bundle 'The-NERD-Commenter'
 
 " VimPress
 "-------------------------------------------------------------------------------------
-Bundle 'vimrepress'
+"Bundle 'vimrepress'
 "Bundle 'ultrablog'
 
 " Python
 "-------------------------------------------------------------------------------------
 "Bundle 'gg/python.vim'
 "Bundle 'vim-ipython'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
 
-Bundle 'vimwiki'
-Bundle 'mattn/calendar-vim'
+"Bundle 'vimwiki'
+"Bundle 'mattn/calendar-vim'
 "Bundle 'amoffat/snake'
 
 " Markdown
 "-------------------------------------------------------------------------------------
-Bundle 'suan/vim-instant-markdown'
-Bundle 'plasticboy/vim-markdown'
+"Bundle 'suan/vim-instant-markdown'
+"Bundle 'plasticboy/vim-markdown'
 
 Bundle 'godlygeek/tabular'
 Bundle 'yuanjianye/autoload_cscope.vim'
-Bundle 'posva/vim-vue'
+"Bundle 'posva/vim-vue'
 " Game
 "-------------------------------------------------------------------------------------
 "Bundle 'matrix.vim'
