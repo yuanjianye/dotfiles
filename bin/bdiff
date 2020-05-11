@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import sys
+import os
+
+wine_cmd = "/usr/bin/wine"
+bcompare_cmd = os.getenv("HOME") + "/.wine/drive_c/Program Files (x86)/BC2/bc2.exe"
+
+def path_translate(linux_path):
+    abs_path = os.path.abspath(linux_path)
+    mlist = abs_path.split("/")
+    win_path = "z:" + "\\".join(mlist)
+    return win_path
+
+if __name__ == "__main__":
+    #print(path_translate("".join(sys.argv[1:])))
+    exec_list = []
+    exec_list.append(wine_cmd)
+    exec_list.append(bcompare_cmd)
+    for parameter in sys.argv[1:]:
+        exec_list.append(path_translate(parameter))
+    os.execv(wine_cmd, exec_list)

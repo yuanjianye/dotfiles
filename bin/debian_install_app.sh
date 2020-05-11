@@ -42,6 +42,7 @@ apt-get -ym -qq install vsftpd
 apt-get -ym -qq install openssh-server 
 
 #net tools
+apt-get -ym -qq install net-tools
 apt-get -ym -qq install openvpn 
 apt-get -ym -qq install vtun 
 apt-get -ym -qq install bridge-utils 
@@ -57,6 +58,7 @@ apt-get -ym -qq install cifs-utils
 #gui tools
 apt-get -ym -qq install meld 
 apt-get -ym -qq install firefox
+apt-get -ym -qq install git-cola
 
 #desktop
 apt-get -ym -qq install lxappearance
