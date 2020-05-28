@@ -11,9 +11,11 @@ cd `dirname $SCRIPT_FILE`
 MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     smb.conf                /etc/samba/smb.conf
+    v2ray_config.json       /etc/v2ray/config.json
     synergy-yuan.conf       $HOME/.synergy.conf
     w3m_config              $HOME/.w3m/config
     vimrc                   $HOME/.vimrc
+    pentadactylrc           $HOME/.pentadactylrc
     fbtermrc                $HOME/.fbtermrc
     gitconfig               $HOME/.gitconfig
     tmux.conf               $HOME/.tmux.conf
@@ -24,8 +26,8 @@ MYDOT_FILES="
     percol.rc.py            $HOME/.percol.d/rc.py
 "
 #create directory
+mkdir -p /etc/v2ray
 mkdir -p $HOME/.mplayer
-
 mkdir -p $HOME/.percol.d
 mkdir -p $HOME/.config/ranger
 

@@ -54,6 +54,7 @@ apt-get -ym -qq install sshfs
 apt-get -ym -qq install tcpdump
 apt-get -ym -qq install aria2
 apt-get -ym -qq install cifs-utils
+apt-get -ym -qq install proxychains4
 
 #gui tools
 apt-get -ym -qq install meld 

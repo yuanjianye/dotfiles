@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ "$1" == "1" ] || [ "$1" == "enable" ];
+then
+    xdotool key ctrl+F9
+elif [ "$1" == "0" ] || [ "$1" == "disable" ];
+then
+    xdotool key ctrl+F10
+else
+    echo usage: $0 0/1/enable/disable
+fi

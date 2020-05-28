@@ -92,6 +92,8 @@ alias grep="grep --color=auto"
 alias fo="openfile"
 
 alias d='cd $(dirs -lp|percol)'
+alias t='tmux split-window'
+alias p='proxychains4 -q'
 
 alias -s rb=vi
 alias -s c=vi
@@ -115,6 +117,8 @@ alias -s bz2='tar -xvf'
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN.UTF-8
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ "$DISPLAY" = "" ];
 then

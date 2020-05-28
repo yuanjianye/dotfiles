@@ -7,3 +7,11 @@
     default = simple
 [diff]
 	tool = vimdiff
+[credential]
+	helper = store
+[core]
+	autocrlf = input
+[cola]
+	spellcheck = false
+	fontdiff = Monaco,11,-1,5,50,0,0,0,0,0
+	tabwidth = 4

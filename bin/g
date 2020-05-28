@@ -1,0 +1,9 @@
+#!/bin/bash
+if [[ $1 = "" ]]; then
+    clear && echo -n 'QUERY> ' && read -n1 HEAD_STR
+else
+    HEAD_STR=$1
+fi
+PRE_TEXT=$(global -c $HEAD_STR|percol --query $HEAD_STR)
+SELECT_LINE=$(global -x $PRE_TEXT|awk '{print $3 "   \t" $2 "   " $4 " " $5 " " $6 " " $7 " " $8 " " $9 " " $10}'|percol)
+vim $(echo $SELECT_LINE|awk '{print $1}') +$(echo $SELECT_LINE|awk '{print $2}')

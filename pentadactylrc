@@ -1,0 +1,53 @@
+set guioptions=br
+set hintkeys=asdfhjkl
+
+map s :buffer!<Space>
+map b <C-b>
+map B :back<Return>
+"map -builtin t !imswitch 0<Return> :tabopen <Space>
+nmap -builtin f :silent !imswitch 0<Return>f
+nmap -builtin F :silent !imswitch 0<Return>F
+
+map -builtin j 6j
+map -builtin k 6k
+map -builtin H 6h
+map -builtin L 6L
+
+map -builtin J ]]
+map -builtin K [[
+
+map -builtin h gT
+map -builtin l gt
+
+map -builtin ] ]]
+map -builtin [ [[
+
+"set hlsearch=true
+
+set nextpattern=\s*下一页|下一张|下一篇|前一章节|下页|后页\s*,^\bnext\b,\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b
+set previouspattern=\s*上一页|上一张|上一篇|下一章节|上页|前页\s*,^\bprev|previous\b,\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+
+imap jj <ESC>
+
+hi HintElem     background-color:rgba(200, 200, 50, 0.3);  border-radius: 2px;
+hi Hint         font-size: 11px; font-weight:bold; background: #6BA7EF; text-transform: uppercase; color:white; padding: 2px 5px;
+
+command noimg set! premissions.default.image=2
+command ysimg set! premissions.default.image=1
+command nojs set! javascript.enabled=false
+command ysjs set! javascript.enabled=true
+
+command setting tabopen about:preferences
+command weixin  tabopen https://wx2.qq.com
+command weibo   tabopen https://weibo.com
+command baidu   tabopen https://www.baidu.com
+command news    tabopen https://news.sina.com.cn
+command wiki    tabopen https://github.com/yuanjianye/notes/wiki/blog
+command epk     tabopen http://music.163.com/#/djradio?id=735001
+command music   tabopen http://music.163.com
+command npr     tabopen http://music.163.com/#/djradio?id=337450056
+command app     set apptab=true
+
+"map -builtin aa  :js ZoteroPane.addItemFromPage();<Return>
+"command zscrapy js ZoteroPane.addItemFromPage();
+"command zopen emenu Zotero
