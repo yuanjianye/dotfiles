@@ -50,8 +50,6 @@ ZSH_THEME="yuan"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
-#plugins=(svn-fast-info)
-plugins=(autojump adb)
 
 # User configuration
 
@@ -81,17 +79,16 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# nvim
+export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 #set -o vi
 alias mtr='mtr --curses'
-alias cls='clear'
 alias ll='ls -l'
 alias la='ls -a'
 alias ps='ps -aux'
 alias vi='vim'
 alias grep="grep --color=auto"
-alias fo="openfile"
 
-alias d='cd $(dirs -lp|percol)'
 alias t='tmux split-window'
 alias p='proxychains4 -q'
 
@@ -104,8 +101,6 @@ alias -s makefile=vi
 alias -s Makefile=vi
 alias -s log=vi
 alias -s conf=vi
-#alias -s py=vi
-#alias -s js=vi
 
 alias -s html=firefox
 alias -s md=firefox
@@ -143,9 +138,9 @@ fi
 function f() {
     if [ "$*" = "" ];
     then
-        MPATH="$(find|grep -v '/.git/'|percol)"
+		MPATH="$(find  ! -path "*/.svn/*" ! -path "*/.git/*" ! -path "*/.ccls-cache/*"|percol)"
     else
-        MPATH="$(find $*|grep -v '/.git/'|percol)"
+		MPATH="$(find  $* ! -path "*/.svn/*" ! -path "*/.git/*" ! -path "*/.ccls-cache/*"|percol)"
     fi
 
     if [ "$MPATH" = "" ];
@@ -196,5 +191,4 @@ function a() {
     fi
 
     vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
-
 }

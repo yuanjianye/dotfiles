@@ -5,7 +5,7 @@
     "error": "/var/log/v2ray/error.log"
   },
   "inbound": {
-      "port": 10808,
+      "port": 1080,
       "listen": "127.0.0.1",
       "protocol": "socks",
       "settings": {
@@ -20,10 +20,10 @@
           "vnext": [
               {
                   "address": "95.163.193.252",
-                  "port": 1986,
+                  "port": 2086,
                   "users": [
                       {
-                          "id": "",
+                          "id": "2e238e8f-8833-4f6b-b37d-1dd42db18ec1",
                           "alterId": 4
                       }
                   ]

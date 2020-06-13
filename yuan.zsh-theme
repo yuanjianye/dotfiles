@@ -1,7 +1,7 @@
 local current_dir='${PWD/#$HOME/~}'
 local ret_status="%(?:%{$fg[white]%}# :%{$fg_bold[red]%}# )"
 local mygit='$(git_prompt_info)'
-local mytime='%D{%H:%M:%S %a}'
+local mytime='%D{%H:%M:%S %a }'
 
 PROMPT_HOST="%{$fg[white]%}%n@%m:"
 
