@@ -11,8 +11,6 @@ cd `dirname $SCRIPT_FILE`
 MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     smb.conf                /etc/samba/smb.conf
-    v2ray_config.json       /etc/v2ray/config.json
-    synergy-yuan.conf       $HOME/.synergy.conf
     w3m_config              $HOME/.w3m/config
     vimrc                   $HOME/.vimrc
     pentadactylrc           $HOME/.pentadactylrc
@@ -21,6 +19,7 @@ MYDOT_FILES="
     tmux.conf               $HOME/.tmux.conf
     zshrc                   $HOME/.zshrc
     yuan.zsh-theme          $HOME/.oh-my-zsh/themes/yuan.zsh-theme
+    yuan_pl.zsh-theme       $HOME/.oh-my-zsh/themes/yuan_pl.zsh-theme
     mplayer_input.conf      $HOME/.mplayer/input.conf
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
     percol.rc.py            $HOME/.percol.d/rc.py

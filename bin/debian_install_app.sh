@@ -107,11 +107,14 @@ apt-get -ym -qq install mplayer
 apt-get -ym -qq install daemon
 apt-get -ym -qq install w3m
 apt-get -ym -qq install fbterm
+apt-get -ym -qq install googler
+apt-get -ym -qq install youtube-dl
 
 #oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 git clone git://github.com/SpaceVim/SpaceVim.git $HOME/.config/nvim
 pip3 install neovim-remote
+pip3 install fanyi
 
 npm config set registry https://registry.npm.taobao.org/
 yarn config set registry https://registry.npm.taobao.org/
