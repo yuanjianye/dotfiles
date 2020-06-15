@@ -23,6 +23,8 @@ MYDOT_FILES="
     mplayer_input.conf      $HOME/.mplayer/input.conf
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
     percol.rc.py            $HOME/.percol.d/rc.py
+    SpaceVim.d              $HOME/.SpaceVim.d
+    konsole_yuan.colorscheme $HOME/.local/share/konsole/yuan.colorscheme
 "
 #create directory
 mkdir -p /etc/v2ray
@@ -30,28 +32,7 @@ mkdir -p $HOME/.mplayer
 mkdir -p $HOME/.percol.d
 mkdir -p $HOME/.config/ranger
 
-#install menlo font
-mkdir -p /usr/share/fonts/truetype
-if [ ! -f /usr/share/fonts/truetype/Menlo-Regular.ttf ];
-then
-    tar xf $PWD/Menlo.tar.xz -C /usr/share/fonts/truetype
-fi
-if [ ! -f /usr/share/fonts/truetype/monaco.ttf ];
-then
-    tar xf $PWD/Monaco.tar.xz -C /usr/share/fonts/truetype
-fi
-
-ls -l --color /usr/share/fonts/truetype/Menlo-Regular.ttf
-ls -l --color /usr/share/fonts/truetype/monaco.ttf
-
-fc-list|grep Menlo >/dev/null
-MENLO_INSTALLED=$?
-fc-list|grep monaco  >/dev/null
-MONACO_INSTALLED=$?
-if [ "$MENLO_INSTALLED" != 0 ] || [ "$MONACO_INSTALLED" != 0 ];
-then
-    fc-cache
-fi
+rm -rf $HOME/.SpaceVim.d
 
 #create links
 for FILE in $MYDOT_FILES
@@ -72,5 +53,3 @@ do
     ln -sf $PWD/$FILE $MY_BIN_PATH
     ls -l --color $MY_BIN_PATH/$FILE
 done
-
-vim +BundleInstall +qall

@@ -1,0 +1,56 @@
+#=============================================================================
+# init.toml --- Docker config temp file
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+#=============================================================================
+
+[options]
+    colorscheme = "pablo"
+    colorscheme_bg = "dark"
+
+    default_indent = 4
+    enable_insert_leader=false
+    enable_guicolors = false
+    relativenumber = false
+
+    statusline_separator = "nil"
+    statusline_separator = "bar"
+
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+
+    filemanager = "defx"
+    autocomplete_method = "none"
+    bootstrap_before = "myspacevim#before"
+    bootstrap_after = "myspacevim#after"
+
+[[custom_plugins]]
+  name = 'neoclide/coc.nvim'
+  merge = 0
+  build =  'yarn install --frozen-lockfile'
+
+[[custom_plugins]]
+    name = "Yggdroot/LeaderF"
+    build = "./install.sh"
+
+[[custom_plugins]]
+    name = 'voldikss/vim-floaterm'
+
+[[custom_plugins]]
+    name = 'vim-scripts/supertab'
+
+[[custom_plugins]]
+    name = 'jackguo380/vim-lsp-cxx-highlight'
+
+#[[layers]]
+#    name = 'lsp'
+#    filetypes = [
+#        'c',
+#        'cpp',
+#        'map',
+#    ]
+#    [layers.override_cmd]
+#        c = ['ccls', '--log-file=/tmp/ccls.log']
+#        cpp = ['ccls', '--log-file=/tmp/ccls.log']
+#        map = ['ccls', '--log-file=/tmp/ccls.log']
