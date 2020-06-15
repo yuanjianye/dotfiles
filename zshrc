@@ -80,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # nvim
-export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+# export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 #set -o vi
 alias mtr='mtr --curses'
 alias ll='ls -l'
@@ -91,6 +91,7 @@ alias grep="grep --color=auto"
 
 alias t='tmux split-window'
 alias p='proxychains4 -q'
+alias goo='proxychains4 -q googler'
 
 alias -s rb=vi
 alias -s c=vi
@@ -191,4 +192,7 @@ function a() {
     fi
 
     vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
+}
+function fcd(){
+    cd $(dirname $1)
 }

@@ -19,8 +19,10 @@ func! myspacevim#before() abort
     "nnoremap <F5> :<C-u>FloatermKill shell<cr> :<C-u>FloatermNew --autoclose=1 --name=shell floatermfind<cr>
     "nnoremap <F6> :<C-u>FloatermKill shell<cr> :<C-u>FloatermNew --autoclose=1 --name=shell floatermglobal<cr>
 
-    nnoremap <F5> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
-    nnoremap <F6> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
+    "nnoremap <F5> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    "nnoremap <F6> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
+    nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
 
     "inoremap jj <ESC>
@@ -31,10 +33,15 @@ func! myspacevim#before() abort
     let g:spacevim_enable_vimfiler_filetypeicon = 1
     let g:spacevim_lint_on_save = 0
     let g:spacevim_enable_neomake = 0
+
     let g:neomake_echo_current_error = 0
 
     let b:coc_suggest_disable = 1
     let b:coc_diagnostic_disable = 1
+
+    let g:floaterm_width = 0.6
+    let g:floaterm_height = 0.9
+    let g:floaterm_position = 'right'
 
 endf
 
