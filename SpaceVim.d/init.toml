@@ -20,7 +20,7 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
 
-    filemanager = "defx"
+    filemanager = "none"
     autocomplete_method = "none"
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
