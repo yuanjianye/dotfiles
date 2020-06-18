@@ -40,7 +40,7 @@ func! myspacevim#before() abort
     let b:coc_diagnostic_disable = 1
 
     let g:floaterm_width = 0.6
-    let g:floaterm_height = 0.9
+    let g:floaterm_height = 0.95
     let g:floaterm_position = 'right'
 
 endf
