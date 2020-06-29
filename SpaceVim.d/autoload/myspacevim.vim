@@ -44,6 +44,8 @@ func! myspacevim#before() abort
     let g:floaterm_height = 0.95
     let g:floaterm_position = 'right'
 
+    let g:neosnippet#snippets_directory='~/.SpaceVim.d/snippets'
+
 endf
 
 func! myspacevim#after() abort
