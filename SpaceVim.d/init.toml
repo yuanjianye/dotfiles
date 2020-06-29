@@ -21,7 +21,8 @@
     enable_tabline_filetype_icon = true
 
     filemanager = "none"
-    autocomplete_method = "none"
+#autocomplete_method = "none"
+    autocomplete_method = "coc"
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
 
@@ -37,8 +38,8 @@
 [[custom_plugins]]
     name = 'voldikss/vim-floaterm'
 
-[[custom_plugins]]
-    name = 'vim-scripts/supertab'
+#[[custom_plugins]]
+#    name = 'vim-scripts/supertab'
 
 [[custom_plugins]]
     name = 'jackguo380/vim-lsp-cxx-highlight'

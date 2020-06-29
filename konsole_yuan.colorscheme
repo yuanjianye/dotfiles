@@ -1,5 +1,5 @@
 [Background]
-Color=16,17,26
+Color=31,31,38
 
 [BackgroundFaint]
 Color=17,19,27
@@ -92,5 +92,5 @@ Color=218,218,218
 Blur=true
 ColorRandomization=false
 Description=yuan
-Opacity=0.9
-Wallpaper=
+Opacity=0.94
+Wallpaper=/root/图片/Mate_wallpaper.png

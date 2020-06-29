@@ -43,4 +43,5 @@ call coc#config("languageserver", {
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 nnoremap gc :<C-u>CocList -I symbols<cr>
+nmap <silent> gt :<C-u> ! daemon floatermexec get_symbol <cword><cr><cr>
 nnoremap <Leader>s :<C-u>CocList -I symbols<cr>

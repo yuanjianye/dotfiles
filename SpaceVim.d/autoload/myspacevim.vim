@@ -21,6 +21,7 @@ func! myspacevim#before() abort
 
     "nnoremap <F5> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
     nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    nnoremap sd   <SPC>bd
     "nnoremap <F6> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
