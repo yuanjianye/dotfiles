@@ -1,8 +1,6 @@
 #!/bin/sh
 if [ "$VIMRUNTIME" != "" ]; then
-    #nvr --servername "$NVIM_LISTEN_ADDRESS" --remote-expr "floaterm#util#edit(0, '$(realpath $1)')"
     nvr --servername "$NVIM_LISTEN_ADDRESS" -cc "FloatermHide" && nvr --servername="$NVIM_LISTEN_ADDRESS" $*
-    #exec daemon nvr $(realpath $1) $2
 else
     if [ -e "/tmp/nvimsocket" ]; then
         exec nvim $*
