@@ -72,6 +72,7 @@ apt-get -ym -qq install proxychains4
 
 #gui tools
 apt-get -ym -qq install meld
+apt-get -ym -qq install okular
 apt-get -ym -qq install firefox
 apt-get -ym -qq install git-cola
 

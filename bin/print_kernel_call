@@ -1,0 +1,5 @@
+#!/bin/bash
+TRACE_DATA_FILE=/tmp/$(pwgen 6 1).dat
+trace-cmd record -p function -o $TRACE_DATA_FILE -F $* 
+trace-cmd report -i $TRACE_DATA_FILE|grep function|sed "s/^.*function:        //g" |vim -
+

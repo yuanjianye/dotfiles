@@ -7,13 +7,14 @@
 # font family names/pixelsize used by fbterm, multiple font family names must be seperated by ','
 # and using a fixed width font as the first is strongly recommended
 #font-names=Terminal
-font-names=Courier
-font-size=24
+#font-names="RobotoMono Nerd Font"
+#font-names="monaco"
+font-size=14
 
 # force font width (and/or height), usually for non-fixed width fonts
 # legal value format: n (fw_new = n), +n (fw_new = fw_old + n), -n (fw_new = fw_old - n)
-# font-width=15
-# font-height=22
+font-width=14
+font-height=14
 
 # default color of foreground/background text
 # available colors: 0 = black, 1 = red, 2 = green, 3 = brown, 4 = blue, 5 = magenta, 6 = cyan, 7 = white

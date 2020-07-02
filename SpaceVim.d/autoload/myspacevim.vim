@@ -20,13 +20,16 @@ func! myspacevim#before() abort
     "nnoremap <F6> :<C-u>FloatermKill shell<cr> :<C-u>FloatermNew --autoclose=1 --name=shell floatermglobal<cr>
 
     "nnoremap <F5> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    nnoremap <F1> :<C-u>FloatermNew --autoclose=2 ranger<cr>
     nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
     nnoremap sd   <SPC>bd
     "nnoremap <F6> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
+    nnoremap gb :OpenBrowser https://www.bing.com/search?q=<C-R>=expand("<cword>")<cr><cr>
 
     "inoremap jj <ESC>
+
     "cnoremap jj <ESC>
 
     let g:bookmark_auto_close = 1

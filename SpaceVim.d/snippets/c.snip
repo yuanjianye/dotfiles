@@ -206,7 +206,19 @@ abbr    scanf("...", ...);
 
 snippet fprintf
 abbr    fprintf(..., "...\n", ...);
-    fprintf(${1:stderr}, "${2}\n"${3});
+    fprintf(${1:stderr}, "${2}\n");
+
+snippet open
+abbr    open
+    open(${1}, );
+
+snippet read
+abbr    read
+    read(${1}, ,);
+
+snippet write
+abbr    write
+    write(${1}, ,);
 
 snippet fopen
 abbr fopen("...", "...");
@@ -232,7 +244,7 @@ abbr    fread(......, file)
 
 snippet memcpy
 abbr    memcpy(dest, src, nbytes)
-    memcpy(${1:DEST}, ${2:SRC}, ${3:NBYTES})
+    memcpy($1, , );
 
 snippet malloc
 abbr    malloc(size)

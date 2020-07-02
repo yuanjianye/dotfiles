@@ -8,7 +8,7 @@ import subprocess
 opts, args = getopt.getopt(sys.argv[1:],"dh")
 
 priordict = {
-        "md":"firefox",
+        "md":"okular",
         "htm":"firefox",
         "html":"firefox"
         }
@@ -16,13 +16,13 @@ majordict = {
         "audio":"mplayer",
         "video":"mplayer",
         "text":"vi",
-        "image":"feh -F -q -r --zoom max * --start-at"
+        "image":"lximage-qt"
         }
 minordict = {
         "x-chemdraw":"firefox",
-        "pdf":"firefox",
-        "epub":"firefox",
-        "epub+zip":"firefox",
+        "pdf":"okular",
+        "epub":"okular",
+        "epub+zip":"okular",
         "xhtml+xml":"firefox",
         "json":"vi",
         "zip":"vi",
