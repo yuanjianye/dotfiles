@@ -1,17 +1,19 @@
 #!/bin/bash
 echo -e "\033[36m────────────Tmux Buffer Content───────────────────────────\n\n $(tmux show-buffer|head) \n\033[0m"
 echo -e "\033[36m────────────Xclip  Content────────────────────────────────\n\n $(xclip -o |head) \n\n──────────────────────────────────────────────────────────\033[0m"
-MY_TITLE[0]="0 tbuff to bing:  search tmux clip buffer content via bing.com"
-MY_TITLE[1]="1 tbuff to vim:   send tmux clip buffer to vim"
-MY_TITLE[2]="2 xclip to vim:   send xclip content to vim"
-MY_TITLE[3]="3 tbuff to kate:  send tmux clip buffer to kate"
-MY_TITLE[4]="4 tbuff to zhihu: search tmux clip buffer content via zhihu"
+MY_TITLE[0]="0 tbuff to bing:   search tmux clip buffer content via bing.com"
+MY_TITLE[1]="1 tbuff to vim:    send tmux clip buffer to vim"
+MY_TITLE[2]="2 xclip to vim:    send xclip content to vim"
+MY_TITLE[3]="3 tbuff to kate:   send tmux clip buffer to kate"
+MY_TITLE[4]="4 tbuff to google: search tmux clip buffer content via google"
+#MY_TITLE[4]="4 tbuff to zhihu: search tmux clip buffer content via zhihu"
 
 MY_COMMAND[0]="tmux show-buffer | bing && sleep 1"
 MY_COMMAND[1]="tmux show-buffer | nvr -"
 MY_COMMAND[2]="xclip -o | nvr -"
 MY_COMMAND[3]="tmux show-buffer | sendkate && sleep 1"
-MY_COMMAND[4]="tmux show-buffer | zhihu && sleep 1"
+MY_COMMAND[4]="tmux show-buffer | google && sleep 1"
+#MY_COMMAND[4]="tmux show-buffer | zhihu && sleep 1"
 MY_LEN=${#MY_TITLE[@]}
 MY_STR=""
 echo $MY_STR
