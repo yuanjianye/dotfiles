@@ -1,0 +1,2 @@
+#!/bin/sh
+nvr -cc "FloatermNew --auto-close=2 $*"

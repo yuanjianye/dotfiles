@@ -1,0 +1,16 @@
+#!/bin/bash
+source $HOME/.config/kernel_lab.env
+cd $KERNEL_SRC_DIR
+SELECT_LINE=$(global -x $1|awk '{print $3 "   \t" $2 "   " $4 " " $5 " " $6 " " $7 " " $8 " " $9 " " $10}'|percol --auto-match --auto-fail)
+if [ "$SELECT_LINE" = "" ]; then
+    exit 0
+fi
+
+M_FILE=$(realpath """$(echo $SELECT_LINE|awk '{print $1}')""")
+M_LINE=$(echo $SELECT_LINE|awk '{print $2}')
+#nvr --servername "$NVIM_LISTEN_ADDRESS" --remote-expr "floaterm#util#edit(0, '$M_FILE')"
+#nvr --servername "$NVIM_LISTEN_ADDRESS" -cc ":$M_LINE" >/dev/null 2>&1
+if [ "$M_FILE" = "" ] || [ "$M_LINE" = "" ]; then
+    exit 0
+fi
+daemon vim $M_FILE +$M_LINE
