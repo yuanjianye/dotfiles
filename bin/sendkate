@@ -1,0 +1,4 @@
+#!/bin/sh
+MY_TMP_FILE=/tmp/$(pwgen 6 1).txt
+cat >$MY_TMP_FILE
+daemon kate $MY_TMP_FILE

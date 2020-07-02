@@ -12,6 +12,8 @@ apt-get -ym -qq install ack-grep
 apt-get -ym -qq install locate
 apt-get -ym -qq install aptitude
 apt-get -ym -qq install percol
+apt-get -ym -qq install fzf
+apt-get -ym -qq install fd-find
 
 #kernel development
 apt-get -ym -qq install python3-bpfcc
