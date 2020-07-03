@@ -15,6 +15,7 @@ apt-get -ym -qq install percol
 apt-get -ym -qq install fzf
 apt-get -ym -qq install fd-find
 apt-get -ym -qq install pwgen
+apt-get -ym -qq install ripgrep
 
 #kernel development
 apt-get -ym -qq install python3-bpfcc
