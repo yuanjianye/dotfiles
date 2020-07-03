@@ -27,6 +27,7 @@ func! myspacevim#before() abort
     nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
     nnoremap gb :OpenBrowser https://www.bing.com/search?q=<C-R>=expand("<cword>")<cr><cr>
+    nnoremap <F3> :<C-u>!tmux split-window -h mfanyi <cword> <cr><cr>
 
     "inoremap jj <ESC>
 
