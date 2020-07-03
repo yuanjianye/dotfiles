@@ -1,0 +1,3 @@
+#!/bin/bash
+fanyi $*
+read -n1 MY_TEMP

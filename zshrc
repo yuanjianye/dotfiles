@@ -50,6 +50,7 @@ ZSH_THEME="yuan_pl"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
+plugins=(ripgrep fd)
 
 # User configuration
 
@@ -61,6 +62,7 @@ ZSH_THEME="yuan_pl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+compinit
 #source $HOME/.py3/bin/activate
 
 # You may need to manually set your language environment
