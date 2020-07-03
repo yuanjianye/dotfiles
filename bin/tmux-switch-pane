@@ -1,1 +1,1 @@
-tmux select-pane -t :.+ && tmux resize-pane -x 300 -y 300
+tmux select-pane -t :.+ && tmux resize-pane -x 95% -y 95%
