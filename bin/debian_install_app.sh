@@ -31,6 +31,7 @@ apt-get -ym -qq install llvm
 apt-get -ym -qq install clangd
 apt-get -ym -qq install ccls
 apt-get -ym -qq install bear
+apt-get -ym -qq install cloc
 
 #android development
 apt-get -ym -qq install binutils
