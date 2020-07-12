@@ -17,8 +17,9 @@ func! myspacevim#before() abort
 
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
 
-    nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
-    nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
+    "nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    "nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
+    nnoremap <C-k> :<C-u> ! daemon floatermexec f<cr><cr>
 
     nnoremap gb :OpenBrowser https://www.bing.com/search?q=<C-R>=expand("<cword>")<cr><cr>
 

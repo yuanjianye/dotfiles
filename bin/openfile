@@ -8,7 +8,6 @@ import subprocess
 opts, args = getopt.getopt(sys.argv[1:],"dh")
 
 priordict = {
-        "md":"okular",
         "htm":"firefox",
         "html":"firefox"
         }

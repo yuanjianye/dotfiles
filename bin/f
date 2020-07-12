@@ -1,0 +1,15 @@
+#!/bin/sh
+
+MPATH="$(fdfind $*|percol)"
+
+if [ "$MPATH" = "" ]; then
+    return
+fi
+
+if [ -d $MPATH ]; then
+    cd $MPATH
+else
+    openfile $MPATH
+fi
+
+echo $MPATH

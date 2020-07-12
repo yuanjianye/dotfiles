@@ -22,7 +22,7 @@
 
     filemanager = "none"
 #autocomplete_method = "none"
-    autocomplete_method = "coc"
+    autocomplete_method = "neocomplcache"
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
 
@@ -43,6 +43,9 @@
 
 [[custom_plugins]]
     name = 'jackguo380/vim-lsp-cxx-highlight'
+
+[[custom_plugins]]
+    name = 'APZelos/blamer.nvim'
 
 #[[layers]]
 #    name = 'lsp'

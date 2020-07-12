@@ -139,20 +139,12 @@ if exists percol; then
 fi
 
 function f() {
-    if [ "$*" = "" ];
-    then
-		MPATH="$(find  ! -path "*/.svn/*" ! -path "*/.git/*" ! -path "*/.ccls-cache/*"|percol)"
-    else
-		MPATH="$(find  $* ! -path "*/.svn/*" ! -path "*/.git/*" ! -path "*/.ccls-cache/*"|percol)"
-    fi
-
-    if [ "$MPATH" = "" ];
-    then
+	MPATH="$(fdfind $*|percol)"
+    if [ "$MPATH" = "" ]; then
         return
     fi
 
-    if [ -d $MPATH ];
-    then
+    if [ -d $MPATH ]; then
         cd $MPATH
     else
         openfile $MPATH
@@ -194,7 +186,4 @@ function a() {
     fi
 
     vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
-}
-function fcd(){
-    cd $(dirname $1)
 }
