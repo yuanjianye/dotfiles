@@ -1,75 +1,73 @@
 # Control structures {{{
 snippet     if
 options     head
-abbr        if () {}
+abbr        if (condition) {expr;}
     if ($1) {
     }
 
 # No head option in else/elseif so it can be expanded after "}"
 snippet     else
-abbr        else {}
+abbr        else {expr;}
     else {
         $0
     }
 
 snippet     elseif
-abbr        else () {}
+abbr        else (condition) {expr;}
     else if ($1) {
     }
 
 snippet     ifelse
 options     head
 alias       ife, ifel
-abbr        if () {} else {}
+abbr        if (condition) {expr;} else {expr;}
     if ($1) {
     } else {
     }
 
 snippet     for
 options     head
-abbr        for () {}
+abbr        for (i = 0; i < xxx; i++) {expr;}
     for (i = 0; i < ${1}; i++) {
     }
 
 # Counter based for's (don't ask for the type or count start)
 snippet     fori
 options     head
-abbr        for (int x;...; x++) {}
+abbr        for (i = 0; i < xxx; i++) {expr;}
     for (i = 0; i < ${1}; i++) {
     }
 
 # Counter based for's (don't ask for the type or count start)
 snippet     forj
 options     head
-abbr        for (int x;...; x++) {}
+abbr        for (j = 0; j < xxx; j++) {expr;}
     for (j = 0; j < ${1}; j++) {
     }
 
 # For reverse counter
 snippet     forri
 options     head
-abbr        for (int x; ...; x--) {}
-    for (int ${1:i} = ${2}; $1 >= 0; $1--) {
-        ${0:#:TARGET}
+abbr        for (i = xxx; i >= 0; i--) {
+    for (i = ${1}; i >= 0; i--) {
     }
 
 snippet     while
 options     head
-alias       wh
-abbr        while () {}
+abbr        while (cond) {expr;}
     while ($1) {
     }
 
-snippet     do_while
+snippet     dowhile
 options     head
-alias       do
+abbr        do {expr;} while (cond)
     do {
         $1
     } while ();
 
 snippet     switch
 options     head
-abbr        switch () {}
+abbr        switch (key) {case value: expr;break;}
 	switch ($1) {
 		case :
 			break;
@@ -92,13 +90,14 @@ snippet conditional
 snippet     function
 options     head
 alias       func
-abbr        func() {}
-    int ${1:#:func_name}() {
+abbr        int func_name() {xxx;}
+    int ${1:#:func_name}()
+    {
     }
 
 snippet     struct
 options     head
-abbr        struct {}
+abbr        struct struct_name{xxx;};
     struct ${1:#:name} {
     };
 
@@ -119,6 +118,7 @@ abbr        enum {}
 # hard-tab is necessary; C indent doesn't support this.
 snippet     main
 options     head
+abbr ^^int main(int argc, char* argv[]){xxx; return 0;}
 	int main(int argc, char* argv[])
 	{
 		${0:TARGET}
@@ -127,10 +127,11 @@ options     head
 
 snippet     helloworld
 options     head
+abbr        just print helloworld in main function
     #include <stdio.h>
-    int main(int argc, char const* argv[])
+    int main(int argc, char* argv[])
     {
-        puts("hello, world!");
+        printf("hello, world!\n");
         return 0;
     }
 
@@ -140,14 +141,16 @@ options     head
 # #include <...>
 snippet     inc
 options     head
-alias       #inc, #include, #i, #in
-    #include <${1}.h>
+alias       #inc, #include
+abbr        #include <xxx.h>
+    #include <${1}>
 
 # #include "..."
 snippet     inc2
 options     head
 alias       #inc2, #include2
-    #include "${1}.h"
+abbr        #include "xxx.h"
+    #include "${1}"
 
 snippet     #if
 options     head
@@ -192,12 +195,11 @@ abbr #ifndef ... #define ... #endif
 
 # Built-in function calls {{{
 snippet printf
-abbr    printf("...\n", ...);
-alias   pr, pri
+abbr    printf("xxx\n");
     printf("${1}\n");
 
 snippet printk
-abbr    printk("...\n", ...);
+abbr    printk("xxx\n");
     printk("${1}\n");
 
 snippet scanf

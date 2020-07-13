@@ -21,15 +21,14 @@
     enable_tabline_filetype_icon = true
 
     filemanager = "none"
-#autocomplete_method = "none"
     autocomplete_method = "neocomplcache"
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
 
 [[custom_plugins]]
-  name = 'neoclide/coc.nvim'
-  merge = 0
-  build =  'yarn install --frozen-lockfile'
+    name = 'neoclide/coc.nvim'
+    merge = 0
+    build =  'yarn install --frozen-lockfile'
 
 [[custom_plugins]]
     name = "Yggdroot/LeaderF"
@@ -38,14 +37,20 @@
 [[custom_plugins]]
     name = 'voldikss/vim-floaterm'
 
-#[[custom_plugins]]
-#    name = 'vim-scripts/supertab'
-
 [[custom_plugins]]
     name = 'jackguo380/vim-lsp-cxx-highlight'
 
 [[custom_plugins]]
     name = 'APZelos/blamer.nvim'
+
+[[layers]]
+    name = "autocomplete"
+#    auto_completion_tab_key_behavior = "smart"
+    auto_completion_tab_key_behavior = "none"
+    auto_completion_delay = 2
+#auto_completion_return_key_behavior = "complete"
+#auto_completion_complete_with_key_sequence = "enter"
+    auto_completion_complete_with_key_sequence_delay = 0.1
 
 #[[layers]]
 #    name = 'lsp'

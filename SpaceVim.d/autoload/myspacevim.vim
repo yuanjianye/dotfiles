@@ -12,22 +12,19 @@ func! myspacevim#before() abort
 
     nmap ZZ :wqall<CR>
     nmap <C-c> :qa!<CR>
+
     let g:floaterm_keymap_toggle = '<C-j>'
     let g:floaterm_autoclose = 2
 
     inoremap <C-j> <ESC><ESC>:FloatermToggle<cr>
-
-    "nnoremap <C-p> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
+    nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
     "nnoremap <C-k> :<C-u>FloatermNew --autoclose=2 floatermglobal<cr>
-    nnoremap <C-k> :<C-u> ! daemon floatermexec f<cr><cr>
+    "nnoremap <C-k> :<C-u> ! daemon floatermexec f<cr><cr>
 
-    nnoremap gb :OpenBrowser https://www.bing.com/search?q=<C-R>=expand("<cword>")<cr><cr>
+    "nnoremap gb :OpenBrowser https://www.bing.com/search?q=<C-R>=expand("<cword>")<cr><cr>
 
     nnoremap <F1> :<C-u>FloatermNew --autoclose=2 ranger<cr>
     nnoremap <F3> :<C-u>!tmux popup -h 40 -E -K -R "mfanyi <cword>" <cr><cr>
-
-    "inoremap jj <ESC>
-    "cnoremap jj <ESC>
 
     let g:bookmark_auto_close = 1
     let g:spacevim_enable_cursorline = 0
@@ -45,6 +42,8 @@ func! myspacevim#before() abort
     let g:floaterm_position = 'right'
 
     let g:neosnippet#snippets_directory='~/.SpaceVim.d/snippets'
+    let g:neocomplcache_min_syntax_length = 3
+    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 endf
 

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+MPATH="$(fdfind -t f -t l $*|percol)"
+if [ "$MPATH" = "" ]; then
+    return
+fi
+daemon nvr $(realpath $MPATH)

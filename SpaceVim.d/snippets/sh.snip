@@ -5,17 +5,19 @@ options head
 	#!/bin/${1:sh}
 	${0}
 
-
 snippet if
+abbr    if [ cond ]; then xxx fi
 	if [ ${1} ]; then
 	fi
 
 snippet ife
+abbr    if [ cond ]; then xxx else xxx fi
 	if [ ${1} ]; then
     else
 	fi
 
 snippet el
+abbr    else xxx
 	else
 		${1}
 
@@ -29,7 +31,7 @@ snippet for
 	done
 
 snippet while
-alias wh
+abbr    while cond ; do expr done
 	while ${1} ; do
 	done
 
@@ -46,6 +48,7 @@ alias   h <<
 	$1
 
 snippet env
+abbr    #!/usr/bin/env ${1}
 	#!/usr/bin/env ${1}
 
 
