@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MPATH="$(fdfind $*|percol)"
+MPATH="$(fdfind $*|fzf)"
 
 if [ "$MPATH" = "" ]; then
     return

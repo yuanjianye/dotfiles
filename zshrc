@@ -139,7 +139,7 @@ if exists percol; then
 fi
 
 function f() {
-	MPATH="$(fdfind $*|percol)"
+	MPATH="$(fdfind $*|fzf)"
     if [ "$MPATH" = "" ]; then
         return
     fi
@@ -149,6 +149,7 @@ function f() {
     else
         openfile $MPATH
     fi
+    export LAST_PERCOL=$MPATH
     echo $MPATH
 }
 
