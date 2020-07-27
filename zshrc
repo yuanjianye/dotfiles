@@ -149,6 +149,7 @@ function f() {
     else
         openfile $MPATH
     fi
+    export LAST_PERCOL=$MPATH
     echo $MPATH
 }
 
