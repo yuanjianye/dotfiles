@@ -139,7 +139,7 @@ if exists percol; then
 fi
 
 function f() {
-	MPATH="$(fdfind $*|percol)"
+	MPATH="$(fdfind $*|fzf --reverse)"
     if [ "$MPATH" = "" ]; then
         return
     fi
