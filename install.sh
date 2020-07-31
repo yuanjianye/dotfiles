@@ -11,6 +11,7 @@ cd `dirname $SCRIPT_FILE`
 MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     smb.conf                /etc/samba/smb.conf
+    proxychains4.conf       /etc/proxychains4.conf
     w3m_config              $HOME/.w3m/config
     vimrc                   $HOME/.vimrc
     pentadactylrc           $HOME/.pentadactylrc

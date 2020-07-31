@@ -24,6 +24,7 @@ apt-get -ym -qq install bpfcc-tools
 apt-get -ym -qq install debootstrap
 apt-get -ym -qq install nfs-kernel-server
 apt-get -ym -qq install qemu-system-x86
+apt-get -ym -qq install libelf-dev
 apt-get -ym -qq install dwarves
 apt-get -ym -qq install clang
 apt-get -ym -qq install llc
