@@ -15,3 +15,6 @@
 	spellcheck = false
 	fontdiff = Monaco,11,-1,5,50,0,0,0,0,0
 	tabwidth = 4
+[cinnabar]
+	version-check = 1602684635
+	helper = /home/nvme/firefox_android/git-cinnabar/git-cinnabar-helper
