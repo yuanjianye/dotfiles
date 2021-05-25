@@ -50,7 +50,7 @@ ZSH_THEME="yuan_pl"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
-plugins=(ripgrep fd)
+#plugins=(ripgrep fd)
 
 # User configuration
 
@@ -139,7 +139,7 @@ if exists percol; then
 fi
 
 function f() {
-	MPATH="$(fdfind $*|fzf --reverse)"
+	MPATH="$(find  ! -path "*/.svn/*" ! -path "*/.git/*" ! -path "*/.ccls-cache/*"|fzf --reverse)"
     if [ "$MPATH" = "" ]; then
         return
     fi
@@ -156,7 +156,7 @@ function f() {
 function m() {
     if [ "$*" != "" ];
     then
-        MPATH="$(locate "$*"|percol)"
+        MPATH="$(locate "$*"|fzf --reverse)"
     fi
 
     if [ "$MPATH" = "" ];
@@ -173,10 +173,19 @@ function m() {
     echo $MPATH
 }
 
+function myrepeat()
+{
+    while :;
+    do
+        $@ && return;
+        sleep 2;
+    done
+}
+
 function a() {
     if [ "$*" != "" ];
     then
-        MGREP="$(ack $*|percol)"
+        MGREP="$(ack $*|fzf --reverse)"
     else
         return
     fi
@@ -187,4 +196,8 @@ function a() {
     fi
 
     vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
+}
+
+function arm-make() {
+    make ARCH=arm64  CROSS_COMPILE=aarch64-linux-gnu- -j20 $*
 }

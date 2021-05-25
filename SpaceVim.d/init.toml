@@ -9,7 +9,7 @@
     colorscheme = "pablo"
     colorscheme_bg = "dark"
 
-    default_indent = 4
+#    default_indent = 4
     enable_insert_leader=false
     enable_guicolors = false
     relativenumber = false
@@ -25,10 +25,10 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
 
-[[custom_plugins]]
-    name = 'neoclide/coc.nvim'
-    merge = 0
-    build =  'yarn install --frozen-lockfile'
+#[[custom_plugins]]
+#    name = 'neoclide/coc.nvim'
+#    merge = 0
+#    build =  'yarn install --frozen-lockfile'
 
 [[custom_plugins]]
     name = "Yggdroot/LeaderF"
@@ -37,8 +37,8 @@
 [[custom_plugins]]
     name = 'voldikss/vim-floaterm'
 
-[[custom_plugins]]
-    name = 'jackguo380/vim-lsp-cxx-highlight'
+#[[custom_plugins]]
+#    name = 'jackguo380/vim-lsp-cxx-highlight'
 
 [[custom_plugins]]
     name = 'APZelos/blamer.nvim'

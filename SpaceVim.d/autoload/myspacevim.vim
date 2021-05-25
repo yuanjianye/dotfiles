@@ -18,7 +18,7 @@ func! myspacevim#before() abort
 
     inoremap <C-l> <ESC><ESC>:FloatermToggle<cr>
     nnoremap <F1> :<C-u>FloatermNew --autoclose=2 ranger<cr>
-    nnoremap <F3> :<C-u>!tmux popup -h 40 -E -K -R "mfanyi <cword>" <cr><cr>
+    nnoremap <F3> :<C-u>!tmux split -h "mfanyi <cword>" <cr><cr>
     nnoremap <F4> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
     nnoremap <SPACE>tg :<C-u>:BlamerToggle<cr>
 

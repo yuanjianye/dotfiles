@@ -1,5 +1,5 @@
 #!/bin/bash
-MY_BIN_PATH="/usr/local/sbin"
+MY_BIN_PATH="/usr/local/bin"
 
 SCRIPT_FILE=$0
 while [ -L $SCRIPT_FILE ]
@@ -12,7 +12,6 @@ MYDOT_FILES="
     vsftpd.conf             /etc/vsftpd.conf
     smb.conf                /etc/samba/smb.conf
     proxychains4.conf       /etc/proxychains4.conf
-    w3m_config              $HOME/.w3m/config
     vimrc                   $HOME/.vimrc
     pentadactylrc           $HOME/.pentadactylrc
     fbtermrc                $HOME/.fbtermrc
@@ -25,7 +24,6 @@ MYDOT_FILES="
     ranger/rifle.conf       $HOME/.config/ranger/rifle.conf
     percol.rc.py            $HOME/.percol.d/rc.py
     SpaceVim.d              $HOME/.SpaceVim.d
-    konsole_yuan.colorscheme $HOME/.local/share/konsole/yuan.colorscheme
 "
 #create directory
 mkdir -p /etc/v2ray
