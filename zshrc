@@ -185,7 +185,7 @@ function myrepeat()
 function a() {
     if [ "$*" != "" ];
     then
-        MGREP="$(ack $*|fzf --reverse)"
+        MGREP="$(git grep -n $*|fzf --reverse)"
     else
         return
     fi
@@ -195,7 +195,7 @@ function a() {
         return
     fi
 
-    vim "+set cursorline" $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
+    vim $(echo "$MGREP"|awk -F : '{print $1 " +" $2}')
 }
 
 function arm-make() {

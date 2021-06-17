@@ -9,7 +9,7 @@
     colorscheme = "pablo"
     colorscheme_bg = "dark"
 
-#    default_indent = 4
+    default_indent = 8
     enable_insert_leader=false
     enable_guicolors = false
     relativenumber = false
@@ -52,6 +52,8 @@
 #auto_completion_complete_with_key_sequence = "enter"
     auto_completion_complete_with_key_sequence_delay = 0.1
 
+[[layers]]
+    name = "gtags"
 #[[layers]]
 #    name = 'lsp'
 #    filetypes = [

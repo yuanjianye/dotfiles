@@ -7,20 +7,27 @@ func! myspacevim#before() abort
 
     set nonumber
     set norelativenumber
-    set tabstop=4
     set scrolloff=15
+    "set mouse=none
 
     nmap ZZ :wqall<CR>
     nmap <C-c> :qa!<CR>
 
     let g:floaterm_keymap_toggle = '<C-l>'
     let g:floaterm_autoclose = 2
+    let g:spacevim_expand_tab = 0
+
+    let Gtags_OpenQuickfixWindow = 0
 
     inoremap <C-l> <ESC><ESC>:FloatermToggle<cr>
     nnoremap <F1> :<C-u>FloatermNew --autoclose=2 ranger<cr>
     nnoremap <F3> :<C-u>!tmux split -h "mfanyi <cword>" <cr><cr>
     nnoremap <F4> :<C-u>FloatermNew --autoclose=2 floatermfind<cr>
     nnoremap <SPACE>tg :<C-u>:BlamerToggle<cr>
+    nnoremap <SPACE>gd :Gtags -d <cr><cr>
+    nnoremap <SPACE>gr :Gtags -r <cr><cr>
+    nnoremap gb :GtagsRemind<cr>
+    nnoremap gd :GtagsCursor<cr>
 
     let g:bookmark_auto_close = 1
     let g:spacevim_enable_cursorline = 0
@@ -77,4 +84,5 @@ func! myspacevim#after() abort
     iunmap jk
     iunmap "
     iunmap '
+
 endf
