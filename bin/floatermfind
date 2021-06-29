@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MPATH="$(fdfind -t f -t l $*|fzf --reverse --bind=f4:abort)"
+MPATH="$(fdfind -t f -t l $*|fzf)"
 if [ "$MPATH" = "" ]; then
     return
 fi
